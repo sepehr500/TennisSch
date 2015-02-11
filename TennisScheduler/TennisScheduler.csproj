@@ -165,8 +165,10 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\ClosedTime.cs" />
     <Compile Include="Models\Court.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\OpenTime.cs" />
     <Compile Include="Models\Reservation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />

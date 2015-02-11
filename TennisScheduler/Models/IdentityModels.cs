@@ -26,6 +26,9 @@ namespace TennisScheduler.Models
         }
         public DbSet<Court> Courts { get; set; }
         public DbSet<Reservation> Reservations { get; set; }
+        public DbSet<ClosedTime> ClosedTimes { get; set; }
+        public DbSet<OpenTime> OpenTimes { get; set; }
+
 
 
         public static ApplicationDbContext Create()
