@@ -2,6 +2,7 @@
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
+using System.Data.Entity;
 
 namespace TennisScheduler.Models
 {
@@ -23,6 +24,9 @@ namespace TennisScheduler.Models
             : base("DefaultConnection", throwIfV1Schema: false)
         {
         }
+        public DbSet<Court> Courts { get; set; }
+        public DbSet<Reservation> Reservations { get; set; }
+
 
         public static ApplicationDbContext Create()
         {
