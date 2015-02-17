@@ -29,8 +29,8 @@ namespace TennisScheduler.Models
         public UserType UserType { get; set; }
         
         //Subtract Time out from time in to get playtime
-        public float PlayTime { get; set; }
 
+        public DateTime TimeOut { get; set; }
         public byte NumberOfPlayers { get; set; }
         public decimal Price { get; set; }
         public virtual Court CourtId { get; set; }

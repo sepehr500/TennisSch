@@ -9,7 +9,7 @@ namespace TennisScheduler.Models
     {
 
         public int Id { get; set; }
-        public DateTime DayOfWeek { get; set; }
+        public DayOfWeek DayOfWeek { get; set; }
         public DateTime OpenTime { get; set; }
         public DateTime CloseTime { get; set; }
     }
