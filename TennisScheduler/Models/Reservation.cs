@@ -26,7 +26,7 @@ namespace TennisScheduler.Models
         public string LastName { get; set; }
         public string ContactInfo { get; set; }
         public DateTime TimeIn { get; set; }
-        public UserType UserType { get; set; }
+        public UserType TypeUser { get; set; }
         
         //Subtract Time out from time in to get playtime
 
