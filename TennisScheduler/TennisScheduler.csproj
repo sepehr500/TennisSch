@@ -168,6 +168,10 @@
     <Compile Include="Migrations\201502201732341_dog.Designer.cs">
       <DependentUpon>201502201732341_dog.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201503020221405_ChangesMade.cs" />
+    <Compile Include="Migrations\201503020221405_ChangesMade.Designer.cs">
+      <DependentUpon>201503020221405_ChangesMade.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ClosedTime.cs" />
@@ -243,6 +247,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201502201732341_dog.resx">
       <DependentUpon>201502201732341_dog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201503020221405_ChangesMade.resx">
+      <DependentUpon>201503020221405_ChangesMade.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

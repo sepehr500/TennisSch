@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using TennisScheduler.Classes;
 
 namespace TennisScheduler.Controllers
 {
@@ -10,6 +11,8 @@ namespace TennisScheduler.Controllers
     {
         public ActionResult Index()
         {
+            var calander = new TennisCalender();
+            
             return View();
         }
 
