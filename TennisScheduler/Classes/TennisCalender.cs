@@ -6,7 +6,7 @@ using TennisScheduler.Models;
 /* 
  HOW TO USE THIS CLASS
  1. Make a new instance of the tenniscalander class.
- 2. Call the getMonth method and pass in the dbcontext and number of the month you want.
+ 2. Call the getMonth method and pass in the number of the month you want.
  3. This will populate the Times list which is an atribute of the Tennis Calander.
  4. The Times list now contains a massive collection of 30 min time slots for each court. Each time slot is a TimeSlot which can be seen below.
  5. You can now sort the Times list. Do this using a lambda exspression.
@@ -23,27 +23,32 @@ namespace TennisScheduler.Classes
     public class TennisCalender
     {
         public List<TimeSlot> Times;
-        public List<TimeSlot>  getMonth(ApplicationDbContext x, int Month)
+        public List<TimeSlot>  getMonth(int Month)
         {
-            DateTime CurrentTime = new DateTime(DateTime.Now.Year , Month , 1 , 0 ,0 , 0);
-            foreach (var court in x.Courts)
+            using (ApplicationDbContext x = new ApplicationDbContext())
             {
 
 
-                while (CurrentTime.Month == Month)
+                DateTime CurrentTime = new DateTime(DateTime.Now.Year, Month, 1, 0, 0, 0);
+                foreach (var court in x.Courts)
                 {
-                    if (isOpen(CurrentTime) == true && isClosed(CurrentTime) == false && isTaken(court.Number , CurrentTime) == false)
+
+
+                    while (CurrentTime.Month == Month)
                     {
+                        if (isOpen(CurrentTime) == true && isClosed(CurrentTime) == false && isTaken(court.Number, CurrentTime) == false)
+                        {
 
-                        Times.Add(new TimeSlot { CourtNum = court.Number , Time = CurrentTime, Available = true });
+                            Times.Add(new TimeSlot { CourtNum = court.Number, Time = CurrentTime, Available = true });
+                        }
+                        else
+                        {
+
+                            Times.Add(new TimeSlot { CourtNum = court.Number, Time = CurrentTime, Available = false });
+                        }
+
+                        CurrentTime.AddMinutes(30);
                     }
-                    else
-                    {
-
-                        Times.Add(new TimeSlot {CourtNum = court.Number, Time = CurrentTime, Available = false });
-                    }
-
-                    CurrentTime.AddMinutes(30);
                 }
             }
             return this.Times;
@@ -76,7 +81,7 @@ namespace TennisScheduler.Classes
 
             using(ApplicationDbContext db = new ApplicationDbContext())
 	{
-                var DayList = db.ClosedTimes.Where(x => x.Date1.Day == Time.Day).ToList();
+                var DayList = db.ClosedTimes.Where(x => x.Covered(Time) == true).ToList();
 
                 foreach (var item in DayList)
 	{
