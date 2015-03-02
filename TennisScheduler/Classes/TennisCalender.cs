@@ -6,7 +6,7 @@ using TennisScheduler.Models;
 
 namespace TennisScheduler.Classes
 {
-    private class TimeSlot
+    public class TimeSlot
     {
         public DateTime Time { get; set; }
         public bool Available { get; set; }
@@ -14,7 +14,7 @@ namespace TennisScheduler.Classes
     public class TennisCalender
     {
         private List<TimeSlot> Times;
-        public List<TimeSlot>  GetMonth(this ApplicationDbContext, int Month)
+        public List<TimeSlot>  GetMonth(ApplicationDbContext x, int Month)
         {
             DateTime CurrentTime = new DateTime(DateTime.Now.Year , Month , 1 , 0 ,0 , 0);
             while (CurrentTime.Month == Month )
@@ -46,7 +46,7 @@ namespace TennisScheduler.Classes
                 var Day = DayList.First();
 
                 
-                if (Time.TimeOfDay >= Day.OpenTime.TimeOfDay && Time.TimeOfDay <= Day.CloseTime.TimeOfDay)
+                if (Time.TimeOfDay >= Day.TimeOpen.TimeOfDay && Time.TimeOfDay <= Day.CloseTime.TimeOfDay)
 	            {
 		                return true;
 	            }
