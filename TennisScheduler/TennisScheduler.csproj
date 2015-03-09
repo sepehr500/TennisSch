@@ -158,9 +158,14 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Classes\CalenderShow.cs" />
     <Compile Include="Classes\TennisCalender.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\ClosedTimesController.cs" />
+    <Compile Include="Controllers\CourtsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\OpenTimesController.cs" />
+    <Compile Include="Controllers\ReservationsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -171,6 +176,10 @@
     <Compile Include="Migrations\201503020221405_ChangesMade.cs" />
     <Compile Include="Migrations\201503020221405_ChangesMade.Designer.cs">
       <DependentUpon>201503020221405_ChangesMade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201503021753192_RepeatEventEnum.cs" />
+    <Compile Include="Migrations\201503021753192_RepeatEventEnum.Designer.cs">
+      <DependentUpon>201503021753192_RepeatEventEnum.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -192,9 +201,11 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\Calender\Index.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery-ui-1.8.11.min.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
@@ -233,6 +244,26 @@
     <Content Include="Views\Account\ResetPassword.cshtml" />
     <Content Include="Views\Account\ResetPasswordConfirmation.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\ClosedTimes\Create.cshtml" />
+    <Content Include="Views\ClosedTimes\Delete.cshtml" />
+    <Content Include="Views\ClosedTimes\Details.cshtml" />
+    <Content Include="Views\ClosedTimes\Edit.cshtml" />
+    <Content Include="Views\ClosedTimes\Index.cshtml" />
+    <Content Include="Views\OpenTimes\Create.cshtml" />
+    <Content Include="Views\OpenTimes\Delete.cshtml" />
+    <Content Include="Views\OpenTimes\Details.cshtml" />
+    <Content Include="Views\OpenTimes\Edit.cshtml" />
+    <Content Include="Views\OpenTimes\Index.cshtml" />
+    <Content Include="Views\Courts\Create.cshtml" />
+    <Content Include="Views\Courts\Delete.cshtml" />
+    <Content Include="Views\Courts\Details.cshtml" />
+    <Content Include="Views\Courts\Edit.cshtml" />
+    <Content Include="Views\Courts\Index.cshtml" />
+    <Content Include="Views\Reservations\Create.cshtml" />
+    <Content Include="Views\Reservations\Delete.cshtml" />
+    <Content Include="Views\Reservations\Details.cshtml" />
+    <Content Include="Views\Reservations\Edit.cshtml" />
+    <Content Include="Views\Reservations\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -250,6 +281,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201503020221405_ChangesMade.resx">
       <DependentUpon>201503020221405_ChangesMade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201503021753192_RepeatEventEnum.resx">
+      <DependentUpon>201503021753192_RepeatEventEnum.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

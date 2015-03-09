@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
@@ -34,6 +35,7 @@ namespace TennisScheduler.Models
 
         public DateTime TimeOut { get; set; }
         public byte NumberOfPlayers { get; set; }
+        [DataType(DataType.Currency)]
         public decimal Price { get; set; }
         public virtual Court Court { get; set; }
         

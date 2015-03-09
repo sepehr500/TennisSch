@@ -29,6 +29,7 @@ namespace TennisScheduler.Classes
             {
 
 
+                this.Times = new List<TimeSlot>();
                 DateTime CurrentTime = new DateTime(DateTime.Now.Year, Month, 1, 0, 0, 0);
                 foreach (var court in x.Courts)
                 {
@@ -47,8 +48,47 @@ namespace TennisScheduler.Classes
                             Times.Add(new TimeSlot { CourtNum = court.Number, Time = CurrentTime, Available = false });
                         }
 
-                        CurrentTime.AddMinutes(30);
+                       CurrentTime = CurrentTime.AddMinutes(30);
                     }
+                }
+            }
+            return this.Times;
+
+
+
+        }
+        public List<TimeSlot> getDay(int Month, int Day , int Year)
+        {
+            using (ApplicationDbContext x = new ApplicationDbContext())
+            {
+
+                var DayOfWeek = x.OpenTimes.Where(Thing => Thing.DayOfWeek ==   new DateTime(Year, Month, Day, 0, 0, 0).DayOfWeek);
+                var OpenTime = DayOfWeek.First();
+
+                this.Times = new List<TimeSlot>();
+                foreach (var court in x.Courts)
+                {
+
+                DateTime CurrentTime = new DateTime(Year , Month, Day, OpenTime.TimeOpen.Hour, OpenTime.TimeOpen.Minute, 0);
+                
+
+                    //While we have not yet reached close time
+                    while (CurrentTime.TimeOfDay <= OpenTime.CloseTime.TimeOfDay)
+                    {
+                        if (isOpen(CurrentTime) == true && isClosed(CurrentTime) == false && isTaken(court.Number, CurrentTime) == false)
+                        {
+
+                            Times.Add(new TimeSlot { CourtNum = court.Number, Time = CurrentTime, Available = true });
+                        }
+                        else
+                        {
+
+                            Times.Add(new TimeSlot { CourtNum = court.Number, Time = CurrentTime, Available = false });
+                        }
+
+                        CurrentTime = CurrentTime.AddMinutes(30);
+                    }
+
                 }
             }
             return this.Times;
@@ -81,6 +121,10 @@ namespace TennisScheduler.Classes
 
             using(ApplicationDbContext db = new ApplicationDbContext())
 	{
+        if (db.ClosedTimes.Count() == 0)
+        {
+            return false;
+        }
                 var DayList = db.ClosedTimes.Where(x => x.Covered(Time) == true).ToList();
 
                 foreach (var item in DayList)

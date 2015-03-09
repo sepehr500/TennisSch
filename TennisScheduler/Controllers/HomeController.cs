@@ -13,7 +13,27 @@ namespace TennisScheduler.Controllers
         {
             var calander = new TennisCalender();
             
-            return View();
+            var z = calander.getDay(3, 11 , 2015);
+            var test = z.GroupBy(x => x.Time.TimeOfDay).OrderBy(x => x.Key).ToList();
+            var Cal = new CalenderShow();
+            var model = Cal.getFullCalender(DateTime.Now.AddMonths(1));
+            //var model = Cal.getCalender(DateTime.Now.Month, DateTime.Now.Year);
+            return View(model);
+
+            
+        }
+        public ActionResult AsyncUpdateCalender(int month, int year)
+        {
+            if (HttpContext.Request.IsAjaxRequest())
+            {
+                var Cal = new CalenderShow();
+                var model = Cal.getCalender(month, year);
+                return Json(model, JsonRequestBehavior.AllowGet);
+            }
+            else
+            {
+                return View();
+            }
         }
 
         public ActionResult About()
