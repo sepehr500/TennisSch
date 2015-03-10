@@ -11,30 +11,25 @@ namespace TennisScheduler.Controllers
     {
         public ActionResult Index()
         {
-            var calander = new TennisCalender();
+            //var calander = new TennisCalender();
             
-            var z = calander.getDay(3, 11 , 2015);
-            var test = z.GroupBy(x => x.Time.TimeOfDay).OrderBy(x => x.Key).ToList();
+            //var z = calander.getDay(3, 11 , 2015);
+            //var test = z.GroupBy(x => x.Time.TimeOfDay).OrderBy(x => x.Key).ToList();
             var Cal = new CalenderShow();
-            var model = Cal.getFullCalender(DateTime.Now.AddMonths(1));
+            var model = Cal.getFullCalender(DateTime.Now);
             //var model = Cal.getCalender(DateTime.Now.Month, DateTime.Now.Year);
             return View(model);
 
             
         }
-        public ActionResult AsyncUpdateCalender(int month, int year)
+        public ActionResult Changed(DateTime NewMonth , int change)
         {
-            if (HttpContext.Request.IsAjaxRequest())
-            {
-                var Cal = new CalenderShow();
-                var model = Cal.getCalender(month, year);
-                return Json(model, JsonRequestBehavior.AllowGet);
-            }
-            else
-            {
-                return View();
-            }
+            var Cal = new CalenderShow();
+            var model = Cal.getFullCalender(NewMonth.AddMonths(change));
+            return View("Index" , model);
+
         }
+        
 
         public ActionResult About()
         {

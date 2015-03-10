@@ -166,6 +166,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\OpenTimesController.cs" />
     <Compile Include="Controllers\ReservationsController.cs" />
+    <Compile Include="Controllers\RoleAdminController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -181,13 +182,24 @@
     <Compile Include="Migrations\201503021753192_RepeatEventEnum.Designer.cs">
       <DependentUpon>201503021753192_RepeatEventEnum.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201503100041385_TakeARisk.cs" />
+    <Compile Include="Migrations\201503100041385_TakeARisk.Designer.cs">
+      <DependentUpon>201503100041385_TakeARisk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201503100049524_AnotherRisk.cs" />
+    <Compile Include="Migrations\201503100049524_AnotherRisk.Designer.cs">
+      <DependentUpon>201503100049524_AnotherRisk.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\AppRole.cs" />
     <Compile Include="Models\ClosedTime.cs" />
     <Compile Include="Models\Court.cs" />
+    <Compile Include="Models\IdentityHelpers.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\OpenTime.cs" />
     <Compile Include="Models\Reservation.cs" />
+    <Compile Include="Models\UserViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -264,6 +276,10 @@
     <Content Include="Views\Reservations\Details.cshtml" />
     <Content Include="Views\Reservations\Edit.cshtml" />
     <Content Include="Views\Reservations\Index.cshtml" />
+    <Content Include="Views\Reservations\DaySched.cshtml" />
+    <Content Include="Views\RoleAdmin\Create.cshtml" />
+    <Content Include="Views\RoleAdmin\Edit.cshtml" />
+    <Content Include="Views\RoleAdmin\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -284,6 +300,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201503021753192_RepeatEventEnum.resx">
       <DependentUpon>201503021753192_RepeatEventEnum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201503100041385_TakeARisk.resx">
+      <DependentUpon>201503100041385_TakeARisk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201503100049524_AnotherRisk.resx">
+      <DependentUpon>201503100049524_AnotherRisk.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
