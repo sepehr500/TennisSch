@@ -21,9 +21,9 @@ namespace TennisScheduler.Models
         [Display(Name = "Event Name")]
         public string EventName { get; set; }
         //Date1 - Date2 means Closed from Date1 to Date2
-        [DataType(DataType.DateTime)]
+        [DataType(DataType.Date)]
         public DateTime Date1 { get; set; }
-        [DataType(DataType.DateTime)]
+        [DataType(DataType.Date)]
         public DateTime Date2 { get; set; }
 
         public bool Covered(DateTime x)
