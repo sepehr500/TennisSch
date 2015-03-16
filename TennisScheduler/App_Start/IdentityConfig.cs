@@ -4,7 +4,6 @@ using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using TennisScheduler.Models;
-using System;
 
 namespace TennisScheduler
 {
@@ -56,22 +55,7 @@ namespace TennisScheduler
             return manager;
         }
     }
-    public class AppRoleManager : RoleManager<AppRole>, IDisposable
-    {
 
-        public AppRoleManager(RoleStore<AppRole> store)
-            : base(store)
-        {
-        }
-
-        public static AppRoleManager Create(
-                IdentityFactoryOptions<AppRoleManager> options,
-                IOwinContext context)
-        {
-            return new AppRoleManager(new
-                RoleStore<AppRole>(context.Get<ApplicationDbContext>()));
-        }
-    }
     public class EmailService : IIdentityMessageService
     {
         public Task SendAsync(IdentityMessage message)

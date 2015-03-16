@@ -19,8 +19,6 @@ namespace TennisScheduler.Classes
         public DateTime Time { get; set; }
         //True= Available False = Unavailable
         public bool Available { get; set; }
-        public string Type { get; set; }
-        public int Id { get; set; }
     }
     public class TennisCalender
     {
@@ -42,22 +40,12 @@ namespace TennisScheduler.Classes
                         if (isOpen(CurrentTime) == true && isClosed(CurrentTime) == false && isTaken(court.Number, CurrentTime) == false)
                         {
 
-                            Times.Add(new TimeSlot { CourtNum = court.Number, Time = CurrentTime, Available = true , Type = "Open"});
+                            Times.Add(new TimeSlot { CourtNum = court.Number, Time = CurrentTime, Available = true });
                         }
                         else
                         {
-                            if (isClosed(CurrentTime))
-                            {
-                            Times.Add(new TimeSlot { CourtNum = court.Number, Time = CurrentTime, Available = false , Type = "Closed"});
-                               
-                                
-                            }
-                            else
-                            {
-                            Times.Add(new TimeSlot { CourtNum = court.Number, Time = CurrentTime, Available = false , Type = "Reserved"});
 
-                            }
-
+                            Times.Add(new TimeSlot { CourtNum = court.Number, Time = CurrentTime, Available = false });
                         }
 
                        CurrentTime = CurrentTime.AddMinutes(30);
@@ -90,23 +78,12 @@ namespace TennisScheduler.Classes
                         if (isOpen(CurrentTime) == true && isClosed(CurrentTime) == false && isTaken(court.Number, CurrentTime) == false)
                         {
 
-                            Times.Add(new TimeSlot { CourtNum = court.Number, Time = CurrentTime, Available = true , Type = "Open"});
+                            Times.Add(new TimeSlot { CourtNum = court.Number, Time = CurrentTime, Available = true });
                         }
                         else
                         {
-                            if (isClosed(CurrentTime))
-                            {
-                                ClosedTime which = isClosedWhich(CurrentTime);
-                                Times.Add(new TimeSlot { CourtNum = court.Number, Time = CurrentTime, Available = false, Type = "Closed" , Id = which.Id});
 
-
-                            }
-                            else
-                            {
-                                Reservation which = isTakenWhich(court.Number , CurrentTime);
-                                Times.Add(new TimeSlot { CourtNum = court.Number, Time = CurrentTime, Available = false, Type = "Reservation" , Id = which.Id });
-
-                            }
+                            Times.Add(new TimeSlot { CourtNum = court.Number, Time = CurrentTime, Available = false });
                         }
 
                         CurrentTime = CurrentTime.AddMinutes(30);
@@ -148,15 +125,8 @@ namespace TennisScheduler.Classes
         {
             return false;
         }
-                var DayList = new List<ClosedTime>();
-                //var DayList = db.ClosedTimes.Where(x => x.Covered(Time) == true).ToList();
-                foreach (var item in db.ClosedTimes.ToList())
-                {
-                    if (item.Covered(Time))
-                    {
-                        DayList.Add(item);
-                    }
-                }
+                var DayList = db.ClosedTimes.Where(x => x.Covered(Time) == true).ToList();
+
                 foreach (var item in DayList)
 	{
 
@@ -164,49 +134,14 @@ namespace TennisScheduler.Classes
                 
                 if (Time.TimeOfDay >= item.Date1.TimeOfDay && Time.TimeOfDay <= item.Date2.TimeOfDay)
 	            {
-		                return true;
+		                return false;
 	            }
                 
                 }
-                return false;
+                return true;
 	}
 
         }
-        //Which one is closing it?
-        private ClosedTime isClosedWhich(DateTime Time)
-        {
-
-            using (ApplicationDbContext db = new ApplicationDbContext())
-            {
-                if (db.ClosedTimes.Count() == 0)
-                {
-                    return null;
-                }
-                var DayList = new List<ClosedTime>();
-                //var DayList = db.ClosedTimes.Where(x => x.Covered(Time) == true).ToList();
-                foreach (var item in db.ClosedTimes.ToList())
-                {
-                    if (item.Covered(Time))
-                    {
-                        DayList.Add(item);
-                    }
-                }
-                foreach (var item in DayList)
-                {
-
-
-
-                    if (Time.TimeOfDay >= item.Date1.TimeOfDay && Time.TimeOfDay <= item.Date2.TimeOfDay)
-                    {
-                        return item;
-                    }
-
-                }
-                return null;
-            }
-
-        }
-
         //Is it taken?
         private bool isTaken(int CourtNum , DateTime Time)
         {
@@ -220,7 +155,7 @@ namespace TennisScheduler.Classes
 
 	
                 
-                if (Time.TimeOfDay >= item.TimeIn.TimeOfDay && Time.TimeOfDay < item.TimeOut.TimeOfDay)
+                if (Time.TimeOfDay >= item.TimeIn.TimeOfDay && Time.TimeOfDay <= item.TimeOut.TimeOfDay)
 	            {
 		                return true;
 	            }
@@ -230,27 +165,6 @@ namespace TennisScheduler.Classes
 	}
 
         }
-        private Reservation isTakenWhich(int CourtNum, DateTime Time)
-        {
 
-            using (ApplicationDbContext db = new ApplicationDbContext())
-            {
-                var DayList = db.Reservations.Where(x => x.TimeIn.Day == Time.Day && x.Court.Number == CourtNum).ToList();
-
-                foreach (var item in DayList)
-                {
-
-
-
-                    if (Time.TimeOfDay >= item.TimeIn.TimeOfDay && Time.TimeOfDay < item.TimeOut.TimeOfDay)
-                    {
-                        return item;
-                    }
-
-                }
-                return null;
-            }
-
-        }
     }
 }
