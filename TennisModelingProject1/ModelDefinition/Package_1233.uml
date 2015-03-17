@@ -1,0 +1,2201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="6b250118-89ea-48ab-8d8a-6de1e5e27332"
+  name="TennisScheduler"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="fd8583a4-72bd-4a67-9f6c-4543c3a99107"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DTennisScheduler"
+      tag="ViewCode" />
+  </referencesInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="b5a496a8-56ff-4011-83af-8aa2ecd1b3f9">
+      <profileInstance
+        Id="3fb1ae40-1d6f-472c-8e08-144136829465"
+        name="CSharpProfile" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="a069d029-4104-4630-842d-a349e9f90efa"
+        name="FilterConfig"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="f5669973-6355-42ff-b844-83d83a5e696a"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2FTennisScheduler%2Fbin%2FTennisScheduler.dll Namespace%3DTennisScheduler Type%3DFilterConfig"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="62dc1caf-b3d6-41f4-8583-0b46c1905afd"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="edcf76f4-bf2a-42f3-ba55-2f1de2baa95f">
+                <propertyInstance
+                  Id="8a2dd89c-2859-4acf-ba65-c86e69cfb48c"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="dbb79e0c-d779-40b7-8594-aa962d963479">
+                <propertyInstance
+                  Id="9a3bdbe7-9505-4b72-9823-f669bae59846"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2b5f0669-b23e-445e-a523-9a80ef1347ea">
+                <propertyInstance
+                  Id="954e2437-9c30-4016-977f-27f6d4fa1ad1"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="57272c41-286c-4794-8de0-712d054bb39d">
+                <propertyInstance
+                  Id="bade71a6-e82d-4d3c-b938-55afb032cc7b"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="eb23dab5-4135-4d0c-a889-c64dffecb043">
+                <propertyInstance
+                  Id="9341d079-a0fd-4b45-b6ff-c6e99935c483"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="d88ef8be-2559-4d33-93a9-d5a23d688720"
+            name="RegisterGlobalFilters"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="6c39973f-6640-453d-bc00-a29dd5c175e6"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2FTennisScheduler%2Fbin%2FTennisScheduler.dll Namespace%3DTennisScheduler Type%3DFilterConfig Member%3D(Name%3DRegisterGlobalFilters OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2Fpackages%2FMicrosoft.AspNet.Mvc.5.1.2%2Flib%2Fnet45%2FSystem.Web.Mvc.dll Namespace%3DSystem.Web.Mvc Type%3DGlobalFilterCollection)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="55cf4503-7c77-4acd-bdb7-96357afda8fc"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="372bc258-0474-4ecd-ac33-4836290cbaf5">
+                    <propertyInstance
+                      Id="6e2077aa-19fa-4f18-86ac-e4161b34ce1a"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="18ae7e8e-687a-4ddc-babd-69ef71447e37">
+                    <propertyInstance
+                      Id="f07350ee-9e04-4cf1-8eba-e26216ad01e3"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ef93cdaa-439f-4f42-9119-3cfe9c145f21">
+                    <propertyInstance
+                      Id="58f78a76-eb34-4c36-b581-96a539c16042"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="95e137be-64aa-43c2-844a-887a6e1159eb">
+                    <propertyInstance
+                      Id="3570c6a3-70b5-4b3b-8371-cddefb1c7321"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cfaa229d-d3a5-4c52-8b7e-a813c7af7013">
+                    <propertyInstance
+                      Id="884c0239-25d2-4618-8ba1-614c8c33b7f0"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fc0e679e-c52a-4fe0-b325-edd70633d18f">
+                    <propertyInstance
+                      Id="317af0fb-e78e-47eb-aa64-8d3c91fa1463"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a53ef74b-441e-400b-b341-c200033c8286"
+                  name="filters"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="d1bbcf99-e39b-4c53-b528-30fb3c9cb142"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2FTennisScheduler%2Fbin%2FTennisScheduler.dll Namespace%3DTennisScheduler Type%3DFilterConfig Member%3D(Name%3DRegisterGlobalFilters OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2Fpackages%2FMicrosoft.AspNet.Mvc.5.1.2%2Flib%2Fnet45%2FSystem.Web.Mvc.dll Namespace%3DSystem.Web.Mvc Type%3DGlobalFilterCollection)]) ParameterIdentifier%3Dfilters"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="87e15b1c-8a9a-4948-b5e7-27a937c8ba93"
+                      LastKnownName="GlobalFilterCollection"
+                      LastKnownLocation="Package3_1233.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="c1bb5574-3429-487e-b8a1-693f3a4f4f9f"
+            name="FilterConfig"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="2b0f6e9a-cea8-424b-9f25-ea18d1c831d4"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2FTennisScheduler%2Fbin%2FTennisScheduler.dll Namespace%3DTennisScheduler Type%3DFilterConfig Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a963c198-0fed-4c1b-b2e6-b11f10b69920"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="551ebf18-eb0d-4ad5-801d-3949d14a98e0">
+                    <propertyInstance
+                      Id="7d24b338-98ac-48fd-8fe9-f926395cd3f7"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6942df73-4fad-4d05-b920-f652a5867c22">
+                    <propertyInstance
+                      Id="da158e60-d9f8-45f9-b2e4-0b7a2933e529"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="162bdd7b-d6b9-4ebd-9dca-044949f03738">
+                    <propertyInstance
+                      Id="c8f38af0-ab8f-498b-8cef-e14c3127983f"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4e041889-f2a7-43c8-8094-4e035559d1a8">
+                    <propertyInstance
+                      Id="b627bdab-cbbd-45fa-8b1a-286d10aa5a5b"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="533cfa56-8bc6-4df3-a010-c841e8e7d3c1">
+                    <propertyInstance
+                      Id="bd4e0d83-863e-48ba-8f6c-f4852f57424a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="452fff3a-a372-46d7-908f-72ccd58eddf1">
+                    <propertyInstance
+                      Id="b490ca71-7754-40d0-b8d1-3a8decf7cbb9"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="fd8dcf31-0731-4669-91f4-9a5128b5cf5f"
+        name="BundleConfig"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="a75e0be8-deb9-4685-8585-f37b85819d2b"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2FTennisScheduler%2Fbin%2FTennisScheduler.dll Namespace%3DTennisScheduler Type%3DBundleConfig"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="f71ce90c-ed90-42b5-afe7-23439aa430a4"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="cc0c2932-2cbb-46cf-84ce-240c25dc7e90">
+                <propertyInstance
+                  Id="ed4566cd-7066-45c3-8160-dd64cd938075"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e6aa6dc4-f452-49cc-b64e-05889fbb81a4">
+                <propertyInstance
+                  Id="1e774816-33f1-4901-9a40-39d2cb1b2445"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f341325c-fea6-441a-aada-f177d0d4e694">
+                <propertyInstance
+                  Id="4941e00e-9eea-4d0e-b51b-3b06ecd83ab1"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1c1fc6aa-75e4-47b6-abf3-91ebb9141fed">
+                <propertyInstance
+                  Id="fd3d4b89-c283-45c9-a302-43007359eaf1"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0b47b6da-c8d7-4d04-ad4b-192b4331c0fe">
+                <propertyInstance
+                  Id="d46893a3-4a89-486a-b8a1-1832ece8f1be"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="e310d0a9-2109-492e-ab09-2a8e304b1d10"
+            name="RegisterBundles"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="72f5dd89-3318-4dd5-81ea-f207f3a2185e"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2FTennisScheduler%2Fbin%2FTennisScheduler.dll Namespace%3DTennisScheduler Type%3DBundleConfig Member%3D(Name%3DRegisterBundles OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2Fpackages%2FMicrosoft.AspNet.Web.Optimization.1.1.3%2Flib%2Fnet40%2FSystem.Web.Optimization.dll Namespace%3DSystem.Web.Optimization Type%3DBundleCollection)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="878baae2-b253-41b5-ac7c-52b0a1dd2938"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cb7e5b84-87fe-4f41-8128-c1592e32ff59">
+                    <propertyInstance
+                      Id="691e83bd-c169-41c4-ad17-1a516b764506"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b54195ef-3dad-421f-8be3-4144a3b51d32">
+                    <propertyInstance
+                      Id="8498605a-a8d8-44ab-869c-9c6bfd4f5780"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5c1540b2-f74f-44ad-a060-b20d803503e2">
+                    <propertyInstance
+                      Id="3f0c3aec-e510-4a93-bb5d-cf1a53e65a64"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3e2b7636-da92-4e3e-8d2b-7b7b29dbb86f">
+                    <propertyInstance
+                      Id="468fa40e-900f-4d0a-9d4f-7479f9734d08"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="569fdc75-254e-4855-a558-adf5f344f720">
+                    <propertyInstance
+                      Id="8d964f2b-7049-4f80-bacb-629e0400d5b1"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="feefcef6-c7e8-43aa-891c-246007c3e630">
+                    <propertyInstance
+                      Id="9f6fba7f-fd2c-4f54-9c53-7dc2a0d66b82"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="128fcc9a-c37a-4e62-9ade-2d433cc2218d"
+                  name="bundles"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="ff510446-4f0b-4545-b8c4-60c78b4c717e"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2FTennisScheduler%2Fbin%2FTennisScheduler.dll Namespace%3DTennisScheduler Type%3DBundleConfig Member%3D(Name%3DRegisterBundles OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2Fpackages%2FMicrosoft.AspNet.Web.Optimization.1.1.3%2Flib%2Fnet40%2FSystem.Web.Optimization.dll Namespace%3DSystem.Web.Optimization Type%3DBundleCollection)]) ParameterIdentifier%3Dbundles"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="558a90ab-c7ce-4f79-811f-5a412d6234c2"
+                      LastKnownName="BundleCollection"
+                      LastKnownLocation="Package4_1233.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="088ed676-9cb5-4f2f-bcd9-af713304653e"
+            name="BundleConfig"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="6b45ff8b-96dc-4dec-bf10-1cb670713d4c"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2FTennisScheduler%2Fbin%2FTennisScheduler.dll Namespace%3DTennisScheduler Type%3DBundleConfig Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="6c86eedc-78aa-4a1d-ae6f-a667a39b19a1"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="08c903ad-53b4-4e4c-9cea-7f2bb2a829f8">
+                    <propertyInstance
+                      Id="d89bdb38-6aad-4a5a-9e1b-9bbc8b20c33c"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="86a80da2-2e10-4ea5-91c6-07dfe62615a2">
+                    <propertyInstance
+                      Id="0b2a7d89-0510-4cd2-a43d-d07377973af7"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c7bccc3b-1e2c-4bdc-8020-2e73bab2dc1c">
+                    <propertyInstance
+                      Id="a74ba7c8-1f11-442a-b8da-566e51128129"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="92707a18-25e9-4b6d-afbb-934242f818f1">
+                    <propertyInstance
+                      Id="2589da82-0930-4d33-8824-c5d529b968b5"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a5146aef-7e0c-4e65-ae07-1ed6c31d6be3">
+                    <propertyInstance
+                      Id="f4afe046-d2a9-43e4-86bd-103a7d8a3a52"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a29d2f7d-21f3-4530-a412-389ad73b8204">
+                    <propertyInstance
+                      Id="964f5e6a-1372-420d-8c80-ed6ba0630731"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="af21b128-341f-41bc-89a6-cd4e260faaec"
+        name="Startup"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="b083783f-117c-4980-9a23-c54f8109b06f"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2FTennisScheduler%2Fbin%2FTennisScheduler.dll Namespace%3DTennisScheduler Type%3DStartup"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="c6838635-7bd8-4fc1-b64d-9080876b03e4"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9c4cb8d3-87ac-4082-877c-69b259031af0">
+                <propertyInstance
+                  Id="3ac88771-0a22-4e47-b91d-274bc3a3cef1"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ee89a90f-118e-4177-b394-a8ed371804bf">
+                <propertyInstance
+                  Id="057e865c-478b-426e-a7e5-f3584d4f814b"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0d1e0fbd-d0de-429a-b6f3-05d685826d64">
+                <propertyInstance
+                  Id="cf2cfd81-c62f-4dd3-9369-a732c370b363"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8b7d631a-3fb3-414c-b178-695b16d1fce6">
+                <propertyInstance
+                  Id="a51c4334-c405-4d7d-9696-b2d1147d15b1"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6d8e35f2-8aae-45ae-a22a-5554dab3a10b">
+                <propertyInstance
+                  Id="376f837e-6a38-4cf3-bb40-14f6566ad828"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="7874b0c7-cb94-44a9-b856-b1f3ee87c640"
+            name="ConfigureAuth"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="2e459234-bf15-4f89-9cc8-7724f98e3923"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2FTennisScheduler%2Fbin%2FTennisScheduler.dll Namespace%3DTennisScheduler Type%3DStartup Member%3D(Name%3DConfigureAuth OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2Fpackages%2FOwin.1.0%2Flib%2Fnet40%2FOwin.dll Namespace%3DOwin Type%3DIAppBuilder)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f9806d4d-183e-4106-b064-c39ab2be6d9b"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="eb368d36-2b79-449c-82db-7ba70777bc61">
+                    <propertyInstance
+                      Id="3c9d0129-ad8e-43d3-bc13-c23f97555383"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2aff624b-c2a0-43fe-88ad-156e296fb4cb">
+                    <propertyInstance
+                      Id="db692e2e-208f-4e39-8d86-b3793baa5a55"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="00da6cae-b3bf-423e-a5f6-b99c87fbe3d3">
+                    <propertyInstance
+                      Id="6dd2fad9-3fc2-4a47-bf94-ad93d97ab7d3"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f84673db-6172-4b19-b492-fd92b1a5f0aa">
+                    <propertyInstance
+                      Id="ef851331-fabc-4a8e-b548-1c361bc2f4a2"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="60073e30-7798-4759-8416-6e230a934428">
+                    <propertyInstance
+                      Id="e4652e72-285f-4a61-a81c-66de16848454"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="40bc1cf8-d0a4-4fdd-bced-57fa905dd171">
+                    <propertyInstance
+                      Id="345a8356-26c5-4ef9-b5e9-082a7ed62e2c"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c0331968-53de-44c9-8b88-e25ca5929fa7"
+                  name="app"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="5d8f2ca5-fc57-4549-b74d-730e9a1e019c"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2FTennisScheduler%2Fbin%2FTennisScheduler.dll Namespace%3DTennisScheduler Type%3DStartup Member%3D(Name%3DConfigureAuth OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2Fpackages%2FOwin.1.0%2Flib%2Fnet40%2FOwin.dll Namespace%3DOwin Type%3DIAppBuilder)]) ParameterIdentifier%3Dapp"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="384e0caf-9341-457a-8021-6573fbaa96ee"
+                      LastKnownName="IAppBuilder"
+                      LastKnownLocation="Package5_1233.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="fd1dc248-ee55-4451-8569-6d2db874fd9a"
+            name="Configuration"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="476582ff-b248-4bae-b2bf-161a857112b0"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2FTennisScheduler%2Fbin%2FTennisScheduler.dll Namespace%3DTennisScheduler Type%3DStartup Member%3D(Name%3DConfiguration OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2Fpackages%2FOwin.1.0%2Flib%2Fnet40%2FOwin.dll Namespace%3DOwin Type%3DIAppBuilder)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e90eea09-7da6-461c-8c47-1081da13cc2e"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7fa5b2e2-373b-484f-95e1-2ad3b6e9c27f">
+                    <propertyInstance
+                      Id="3307b12b-26c0-4919-ab80-a29f04125704"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cdeeb7f3-9634-42f1-b507-51e7d60b9f76">
+                    <propertyInstance
+                      Id="ce8bb704-e5d4-4d4f-90ae-ac21f64fba1c"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="24b8f249-ff30-4632-82ac-2d0c7e3007e7">
+                    <propertyInstance
+                      Id="d4d42ff4-1361-420b-99ff-4d868aede766"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ee0c1219-c28f-4618-9695-1ae8cc8ee43f">
+                    <propertyInstance
+                      Id="766ec50b-1b30-4054-8902-53280dec2dc0"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="06b790f4-e7bd-4a56-98c2-a0519a837804">
+                    <propertyInstance
+                      Id="c372c090-277d-48ee-8ce9-5d0dee38819d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="161b39e6-b2ac-45fa-b2d1-4ec8ae44143d">
+                    <propertyInstance
+                      Id="fc9accbe-fdd6-4f7f-90c3-d39a90926823"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d371b566-c8f8-4ed4-91e0-3a427dfa4eff"
+                  name="app"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="e9392e57-e814-48e5-8bd5-836293a87a67"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2FTennisScheduler%2Fbin%2FTennisScheduler.dll Namespace%3DTennisScheduler Type%3DStartup Member%3D(Name%3DConfiguration OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2Fpackages%2FOwin.1.0%2Flib%2Fnet40%2FOwin.dll Namespace%3DOwin Type%3DIAppBuilder)]) ParameterIdentifier%3Dapp"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="384e0caf-9341-457a-8021-6573fbaa96ee"
+                      LastKnownName="IAppBuilder"
+                      LastKnownLocation="Package5_1233.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="117725fe-4de8-4ad4-aece-d3843765ba44"
+            name="Startup"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="214584ea-c0f2-4f5f-bb2d-172b4cb43432"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2FTennisScheduler%2Fbin%2FTennisScheduler.dll Namespace%3DTennisScheduler Type%3DStartup Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="521bb42f-f594-42b2-87a2-3ed5b193cb20"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="14df6a50-5365-4827-ba70-a6d67ba21ffb">
+                    <propertyInstance
+                      Id="005b8027-5381-438d-8103-8ee80cb0928e"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="47b762ca-a1a9-4687-8dd3-4618f1b9fe82">
+                    <propertyInstance
+                      Id="d9f8a9c3-f8a8-4d56-b3ac-674a22ddadcd"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fbd69f95-717e-46af-9628-af8c076dc6a0">
+                    <propertyInstance
+                      Id="90200761-6062-4a83-90f0-0f9fa25b700e"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="18318661-d7a0-4036-9d7f-ccf3eb9d3f3b">
+                    <propertyInstance
+                      Id="2ccb311d-cc33-4aad-b1a3-22f019c34f56"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="90bc7e4d-09e2-4e7f-91b0-b8bd54874cd4">
+                    <propertyInstance
+                      Id="c85f4c50-fc42-4ee9-9880-c0817ce5e125"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="15a5aa40-2b43-4348-ac50-c4d0b7f8845e">
+                    <propertyInstance
+                      Id="4dbcdab6-28cd-4331-94a9-5d263bfdd817"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="dde9f21f-53ae-4843-9137-83a80760404a"
+        name="RouteConfig"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="82f01943-40c9-4e5a-8ed9-4f9430b667cb"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2FTennisScheduler%2Fbin%2FTennisScheduler.dll Namespace%3DTennisScheduler Type%3DRouteConfig"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="cbb0343a-5a66-4691-b018-4914b0dff0d7"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="31a3f25a-e576-4527-b0e5-cfa8aa8b1273">
+                <propertyInstance
+                  Id="ce9b0634-bebe-424f-986a-36702dcc4ed9"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ce467552-f566-4d93-a73f-436fe66e7615">
+                <propertyInstance
+                  Id="8034e8eb-bb5d-458d-8bb3-7aea9b2dea24"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e0be95c3-f9c2-41bf-94cc-da54e449a467">
+                <propertyInstance
+                  Id="e49d950c-fc42-4824-9567-1375b382743f"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3ce1eeef-49e4-4741-86bf-688e3516e60d">
+                <propertyInstance
+                  Id="b61feae2-e8c9-43ae-9a1d-d9b28bfcff88"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="cb4639d4-567a-474f-ab11-b643c5bd09fb">
+                <propertyInstance
+                  Id="85685041-6818-4e9b-8dde-1e6a0c504fee"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="a6cf3833-6898-4282-b99b-9500ca4bbef7"
+            name="RegisterRoutes"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="6a77132c-46b8-4e3e-94f5-37bed67d0737"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2FTennisScheduler%2Fbin%2FTennisScheduler.dll Namespace%3DTennisScheduler Type%3DRouteConfig Member%3D(Name%3DRegisterRoutes OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Web.dll&quot; Namespace%3DSystem.Web.Routing Type%3DRouteCollection)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="96a4ad0f-38af-4d76-9137-7681e4ee85da"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2d485ca7-fd62-4ee3-ae46-cee95034981a">
+                    <propertyInstance
+                      Id="172a3227-935f-4d53-afa3-61b338c70640"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c03d9a7d-faf0-43db-9464-49c876031c69">
+                    <propertyInstance
+                      Id="a4823111-baf9-4bc0-85ce-ffa026335743"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fbd7efd0-0574-47b0-8078-51064bfe88c6">
+                    <propertyInstance
+                      Id="b85ebf5f-713d-43a5-a2e9-29f4a076e41e"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b1201834-2400-4e79-8589-83e7308fb3aa">
+                    <propertyInstance
+                      Id="d7ada3ec-0201-48fa-8e58-6a5464d5e246"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f854a998-83d9-4d38-b94f-f6a9507fd87c">
+                    <propertyInstance
+                      Id="7537ce8a-b9a0-41f2-bbb2-d47a8e48f20d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3f44aa72-9957-4513-8e4e-5eaa43e8967c">
+                    <propertyInstance
+                      Id="d1159965-4640-4fe7-91f9-ee18826a993c"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="220f7650-49df-444c-b993-e215a44bd4e5"
+                  name="routes"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="60f7e5f4-5208-4a49-866e-c3b037ac382f"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2FTennisScheduler%2Fbin%2FTennisScheduler.dll Namespace%3DTennisScheduler Type%3DRouteConfig Member%3D(Name%3DRegisterRoutes OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Web.dll&quot; Namespace%3DSystem.Web.Routing Type%3DRouteCollection)]) ParameterIdentifier%3Droutes"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="9f759799-193a-4b7a-940a-93fc03d91e29"
+                      LastKnownName="RouteCollection"
+                      LastKnownLocation="Package6_1233.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="ce84db1d-d7ca-4bbc-b1bb-b8bf6cc2fabb"
+            name="RouteConfig"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="3a43e2c4-e795-46e4-b00a-7b91177888ba"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2FTennisScheduler%2Fbin%2FTennisScheduler.dll Namespace%3DTennisScheduler Type%3DRouteConfig Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e6aa1e25-785c-4aa9-91e1-e08b15a455d2"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="761a1226-830b-47e9-b970-b333d8ff7372">
+                    <propertyInstance
+                      Id="fe214801-2496-47fa-b65b-2287aa757f89"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6f1e55f4-b9e2-4759-8ede-9cff44abc977">
+                    <propertyInstance
+                      Id="031571e3-23a2-4e0a-b850-a9fac2e67b76"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fdf54844-b2cf-49ae-a06f-a9addcb19656">
+                    <propertyInstance
+                      Id="aed4cf89-dd7c-4cea-928d-698d26a0a096"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6df77682-24e4-4fe4-852c-827db330b2b1">
+                    <propertyInstance
+                      Id="7b5e0656-7940-4d6f-adde-df683489c0f6"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e346ed08-183b-46a1-b274-f618806004cf">
+                    <propertyInstance
+                      Id="c6c9fa29-8b26-47a2-a371-ee3c4994ac47"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fdd8654b-339e-4b70-8241-2efd47e92ced">
+                    <propertyInstance
+                      Id="68ca96b4-735a-4f01-95d3-33d4ad1e2e90"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="ef445a9a-9e46-46e3-ba1a-6f9d81ab63af"
+        name="SmsService"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="f4af6bc1-395f-4e33-9f4f-90cefc6b8f98"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2FTennisScheduler%2Fbin%2FTennisScheduler.dll Namespace%3DTennisScheduler Type%3DSmsService"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="1aaa7920-4f4e-4d0f-b9af-bdd304260faa"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="15fff7dd-bf11-4ff1-bfa0-582160ea979b">
+                <propertyInstance
+                  Id="41efeeb1-a481-42f6-8944-0ee94da7baa2"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="49a4b92e-9f69-4f96-91c8-6fe16c30370b">
+                <propertyInstance
+                  Id="c53339ce-2747-4e08-a1eb-272fa1f61704"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="cb3787aa-ddc1-40c0-b446-fc7640b1a316">
+                <propertyInstance
+                  Id="9b331f97-edd7-41db-91f6-742ab0dadc58"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="28baba44-86f7-4aa1-8d74-c3b105b4e9cf">
+                <propertyInstance
+                  Id="a240ad8a-1fbc-4ff5-8fb0-3a25ca5ff904"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="72faeb89-b34b-4142-b70a-82b25c4e2523">
+                <propertyInstance
+                  Id="f9a06a94-7565-4801-9f3f-26bc89779ed6"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="b450cd86-84b2-4849-8b74-651e0956fe27">
+            <interfaceMoniker
+              Id="0d6ef111-1e8b-41a4-9c5d-2a4bde5ab167"
+              LastKnownName="IIdentityMessageService"
+              LastKnownLocation="Package11_1233.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="826b5c4b-da7a-498c-a0b7-b1cba952d7bb"
+            name="SendAsync"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="62ef9d30-0e65-4368-8b35-d6503733b06f"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2FTennisScheduler%2Fbin%2FTennisScheduler.dll Namespace%3DTennisScheduler Type%3DSmsService Member%3D(Name%3DSendAsync OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2Fpackages%2FMicrosoft.AspNet.Identity.Core.2.0.0%2Flib%2Fnet45%2FMicrosoft.AspNet.Identity.Core.dll Namespace%3DMicrosoft.AspNet.Identity Type%3DIdentityMessage)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="2910fbc5-01d6-4bdc-94ea-c38e2a873599"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9faffb96-a4a0-40fd-a2d0-633671623aea">
+                    <propertyInstance
+                      Id="30c9c1ca-96b6-4037-abd4-e6b96ccbb3bb"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="845c7a76-ee7a-4e74-ab31-eca252c7caf5">
+                    <propertyInstance
+                      Id="ed2d857b-483b-46c4-a113-04dbc42c078e"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="749222f4-7073-4e5a-9e00-d6a9e552b0e6">
+                    <propertyInstance
+                      Id="6b56061f-23b8-4b5a-bfc3-23a250fde9bf"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cdfc2ada-75ac-4c56-b986-28437f996e0d">
+                    <propertyInstance
+                      Id="5f4b9160-8c38-4698-bef9-8ebaa9859d1d"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="311061fb-28cd-47ba-8112-fde1145edbfb">
+                    <propertyInstance
+                      Id="2935db57-5599-44c2-8392-bb882712992c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="53f25186-7dca-437a-bb0a-906d7161db57">
+                    <propertyInstance
+                      Id="de716070-8a77-4532-8dc1-e1e31dd367ea"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0e60cdb1-7a79-46e1-89ca-356e36e49fa1"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="29b5c301-47f8-4b33-b75a-99dbc2c719aa"
+                      LastKnownName="Task"
+                      LastKnownLocation="Package8_1233.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2d9d41a0-6ea8-43a6-8977-7bf46a4638e2"
+                  name="message"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="32708474-d2c0-42d4-bc72-fd35709092f3"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2FTennisScheduler%2Fbin%2FTennisScheduler.dll Namespace%3DTennisScheduler Type%3DSmsService Member%3D(Name%3DSendAsync OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2Fpackages%2FMicrosoft.AspNet.Identity.Core.2.0.0%2Flib%2Fnet45%2FMicrosoft.AspNet.Identity.Core.dll Namespace%3DMicrosoft.AspNet.Identity Type%3DIdentityMessage)]) ParameterIdentifier%3Dmessage"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="332a9bca-e52f-407a-8837-8faac5f47179"
+                      LastKnownName="IdentityMessage"
+                      LastKnownLocation="Package11_1233.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="bbe5cf63-b16a-4ea4-a303-f180e9f344a6"
+            name="SmsService"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="967b4328-0847-4ffa-8203-d7bb838b98db"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2FTennisScheduler%2Fbin%2FTennisScheduler.dll Namespace%3DTennisScheduler Type%3DSmsService Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="d8fa6c5f-5450-4c6b-a04d-54f0789aa9c2"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="378fec1c-9c19-44d1-91e3-c30fc99e39c1">
+                    <propertyInstance
+                      Id="4e327a9c-56e3-4215-a8cf-d6e805779547"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b5669952-8ee8-47dd-b33d-2774370e1efd">
+                    <propertyInstance
+                      Id="30f98962-2826-4e1f-a7fd-628bacb33b98"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3e795a8b-232e-4913-bd82-c85dde2b3668">
+                    <propertyInstance
+                      Id="3a089e15-7b86-410f-ba1e-274710b384be"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="16256756-9694-4e5a-9b40-2c5c06b5b940">
+                    <propertyInstance
+                      Id="e9563d02-a490-46d1-8ed7-60884ca477ea"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="abc6b334-a56e-41f5-804b-48c42e68399e">
+                    <propertyInstance
+                      Id="0a69e54b-ddf2-41aa-bb4a-4173e5cd59ce"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2fb0d443-fb18-474b-a777-0a302520daf9">
+                    <propertyInstance
+                      Id="df3f0f9d-485d-46b0-a1dc-a37e7115fad0"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="eccbd1c3-bcca-4bd9-87ff-39f309ec83e4"
+        name="EmailService"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="417068d1-fd6b-4812-ac93-949ae668feff"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2FTennisScheduler%2Fbin%2FTennisScheduler.dll Namespace%3DTennisScheduler Type%3DEmailService"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="6330f2d6-68f1-4290-85d5-84bc8468f5aa"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0f8c4a87-311c-441b-a89d-e9fe7eb42599">
+                <propertyInstance
+                  Id="591397a7-a01d-4720-bfe9-82822d9f4946"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="53222e6a-57c9-4b43-8188-3b86272e3480">
+                <propertyInstance
+                  Id="5b9f602b-c6d2-41e9-99c0-df6d826e27a4"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3c40a533-d2fe-4f65-afa0-274506f13661">
+                <propertyInstance
+                  Id="3dfe4d30-0c6a-47b0-8877-288fee70e711"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="edd7c330-9e62-464e-bdff-477ec20ca598">
+                <propertyInstance
+                  Id="364058e8-3b17-43fb-8ab4-a5bef5555fcc"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1743abd2-d97d-4624-bf79-46319ea21b0b">
+                <propertyInstance
+                  Id="e7b3fc21-ed11-4a51-9dac-391440c01896"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="0b3acd0d-c60a-4fe9-8ab6-bb30a5c38aec">
+            <interfaceMoniker
+              Id="0d6ef111-1e8b-41a4-9c5d-2a4bde5ab167"
+              LastKnownName="IIdentityMessageService"
+              LastKnownLocation="Package11_1233.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="d26f473e-a35b-46b8-a37f-e10375ba0205"
+            name="SendAsync"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="dfdecd29-9386-472c-837e-f340d94bb6b0"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2FTennisScheduler%2Fbin%2FTennisScheduler.dll Namespace%3DTennisScheduler Type%3DEmailService Member%3D(Name%3DSendAsync OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2Fpackages%2FMicrosoft.AspNet.Identity.Core.2.0.0%2Flib%2Fnet45%2FMicrosoft.AspNet.Identity.Core.dll Namespace%3DMicrosoft.AspNet.Identity Type%3DIdentityMessage)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="dc578d56-e00b-477c-96a7-81531da8276f"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ceaf9a6c-bc13-4f97-bc6d-1a55bc9d6e74">
+                    <propertyInstance
+                      Id="8b38b52e-0021-4aa4-908c-27f15edbe013"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f18e25d9-5098-4dce-80c8-a18bbb6b9670">
+                    <propertyInstance
+                      Id="30d6b917-37e9-4da0-9a97-4304c4f9e9b8"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="af0543bc-9978-4a25-a641-ecdc704f44c2">
+                    <propertyInstance
+                      Id="918e0d15-0a11-4db1-90b2-091798df1552"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a0cbd256-d0fe-4570-ab90-722c6c8c0b64">
+                    <propertyInstance
+                      Id="0ff60662-b094-481e-89df-b06a5b65481e"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6584d15f-d795-4743-9e35-a5ff89673cc8">
+                    <propertyInstance
+                      Id="ab5626f6-8935-433d-94f7-ee432c1d4070"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="13e0fe7d-a736-494c-886b-7c5ace3b6aa5">
+                    <propertyInstance
+                      Id="402bb0dd-c261-436e-845e-017373629972"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0e42dd3c-97a4-4232-a1da-d0e1c717dbc8"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="29b5c301-47f8-4b33-b75a-99dbc2c719aa"
+                      LastKnownName="Task"
+                      LastKnownLocation="Package8_1233.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e5173a00-adf0-43f5-bcbb-8ce41d618463"
+                  name="message"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="132fb937-475f-47bd-8cc8-c1229458c2a1"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2FTennisScheduler%2Fbin%2FTennisScheduler.dll Namespace%3DTennisScheduler Type%3DEmailService Member%3D(Name%3DSendAsync OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2Fpackages%2FMicrosoft.AspNet.Identity.Core.2.0.0%2Flib%2Fnet45%2FMicrosoft.AspNet.Identity.Core.dll Namespace%3DMicrosoft.AspNet.Identity Type%3DIdentityMessage)]) ParameterIdentifier%3Dmessage"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="332a9bca-e52f-407a-8837-8faac5f47179"
+                      LastKnownName="IdentityMessage"
+                      LastKnownLocation="Package11_1233.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="6fa69f0b-785e-4677-8778-69febb56048b"
+            name="EmailService"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="77b49953-be91-4281-b5bc-3b63a85c5b82"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2FTennisScheduler%2Fbin%2FTennisScheduler.dll Namespace%3DTennisScheduler Type%3DEmailService Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="db508008-7faa-415f-811c-9f5efe427441"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="19a05a84-fe5e-461a-a9f3-5b0709e845c8">
+                    <propertyInstance
+                      Id="882dd428-5aa4-42b4-870d-59a85eddb8f9"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c3934bcb-b5f4-45e3-a289-9ad27f8b0b3c">
+                    <propertyInstance
+                      Id="9e47a416-eef4-4e44-a58c-acc64930bd8d"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ce1a51cc-f9d6-4bf1-9908-74aa8b9ce302">
+                    <propertyInstance
+                      Id="462d8bcc-4028-45fd-b357-0383e3bdf8ab"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ea7febc9-b1c0-4550-8dbf-3df86e19663f">
+                    <propertyInstance
+                      Id="865e8f5a-950b-4bb3-93f3-3749fbf56638"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1a936a81-c1b5-46d9-b581-4b9663e6fe7d">
+                    <propertyInstance
+                      Id="40b08123-7851-4e3b-84b6-f06ca64e2ba5"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8a044def-f0b5-415f-98d0-b0652fb8785e">
+                    <propertyInstance
+                      Id="97357742-ec88-46ab-9157-a187d8e4ee11"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="c9d4bec3-27b1-4a36-811d-44056496c2ee"
+        name="AppRoleManager"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="018110ff-7f1a-4e60-8f0e-6f91ed76020f"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2FTennisScheduler%2Fbin%2FTennisScheduler.dll Namespace%3DTennisScheduler Type%3DAppRoleManager"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="31da023a-bac0-49e2-9688-db18a684c424"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="79c13ba8-c436-43a8-91ef-203c443acbb9">
+                <propertyInstance
+                  Id="a43d8170-1910-4e54-922c-747c0d0f1ca8"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="66a57768-b5d3-4ee1-8ddd-ec564d801f0d">
+                <propertyInstance
+                  Id="1c9e24cf-11b5-437d-b99f-b42db0b93ada"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7370eddb-162c-4a32-a024-813d6a1ed43f">
+                <propertyInstance
+                  Id="da952cae-0394-46b3-98ec-54dafecafc3e"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a2113b29-3f65-4d59-9dca-4cf9423b63da">
+                <propertyInstance
+                  Id="78dca824-e60a-445f-8175-d217ae0b3d09"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f750ec6c-a379-4221-be42-197031f12876">
+                <propertyInstance
+                  Id="04113ab6-7a1e-4214-a6cd-d5f9000de924"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="361a7d1a-9ba1-4542-b8a6-b49e8ba92995">
+            <interfaceMoniker
+              Id="555ec9cd-d509-4b42-b50e-f908048e420b"
+              LastKnownName="IDisposable"
+              LastKnownLocation="Package1_1233.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization
+            Id="3c5b6eba-84a1-40b5-815a-0304a0168dad"
+            isSubstitutable="false">
+            <classMoniker
+              Id="df3f52be-f875-4992-8da1-94d05aeaa206"
+              LastKnownName="RoleManager&lt;AppRole‎&gt;"
+              LastKnownLocation="Package11_1233.uml" />
+          </generalization>
+          <generalization
+            Id="29012914-02a9-44de-98b7-0c3b40157bb4"
+            isSubstitutable="false">
+            <classMoniker
+              Id="6e70ad8f-5649-4be8-ba7b-939e35d958d7"
+              LastKnownName="RoleManager"
+              LastKnownLocation="Package11_1233.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="d7e169cf-d7b3-41fe-9fc5-6037de1d0980"
+            name="Create"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="37169598-d636-4aa3-bc21-ea8c2aa07f07"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2FTennisScheduler%2Fbin%2FTennisScheduler.dll Namespace%3DTennisScheduler Type%3DAppRoleManager Member%3D(Name%3DCreate OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2Fpackages%2FMicrosoft.AspNet.Identity.Owin.2.0.0%2Flib%2Fnet45%2FMicrosoft.AspNet.Identity.Owin.dll Namespace%3DMicrosoft.AspNet.Identity.Owin Type%3D(Name%3DIdentityFactoryOptions GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2FTennisScheduler%2Fbin%2FTennisScheduler.dll Namespace%3DTennisScheduler Type%3DAppRoleManager)]))%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2Fpackages%2FMicrosoft.Owin.2.1.0%2Flib%2Fnet45%2FMicrosoft.Owin.dll Namespace%3DMicrosoft.Owin Type%3DIOwinContext)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="992f1708-a9ec-4ee3-b877-60eb4136eec1"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f1791ff8-f489-4eab-b847-c7f19fff8f11">
+                    <propertyInstance
+                      Id="d1b72528-c8a9-4cec-8589-1bf5c7d542f3"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9e248bbe-b7ca-4bf8-b976-6ef43d1c95d6">
+                    <propertyInstance
+                      Id="b42609a3-65d8-4e14-8ad8-8459c418706f"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7b5a6caa-c9d7-4c00-b8f8-002906290090">
+                    <propertyInstance
+                      Id="b848e8df-c314-497d-af78-8bf0ecf3b509"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cdc90728-9626-4904-88d1-b2d406b3f1e2">
+                    <propertyInstance
+                      Id="e6eaf6b3-eb06-450d-b461-d3ae2e65dd61"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="53f408af-603c-42c7-985c-f0cac90fc7dc">
+                    <propertyInstance
+                      Id="cf780f71-1ffa-443c-92ea-bb5172fe166a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="356ba96f-7309-4752-b62e-924d023b8eb9">
+                    <propertyInstance
+                      Id="8ab171f7-7120-484e-9104-b2e225ed2807"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="572fbbc1-89d2-4bd8-8e1c-cf2a0a507499"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="c9d4bec3-27b1-4a36-811d-44056496c2ee"
+                      LastKnownName="AppRoleManager"
+                      LastKnownLocation="Package_1233.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="973b4836-1e74-4da2-9f39-e2214ee8e8ef"
+                  name="options"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="a7f36fd1-a8b3-40af-9c6d-44a549d72a5d"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2FTennisScheduler%2Fbin%2FTennisScheduler.dll Namespace%3DTennisScheduler Type%3DAppRoleManager Member%3D(Name%3DCreate OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2Fpackages%2FMicrosoft.AspNet.Identity.Owin.2.0.0%2Flib%2Fnet45%2FMicrosoft.AspNet.Identity.Owin.dll Namespace%3DMicrosoft.AspNet.Identity.Owin Type%3D(Name%3DIdentityFactoryOptions GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2FTennisScheduler%2Fbin%2FTennisScheduler.dll Namespace%3DTennisScheduler Type%3DAppRoleManager)]))%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2Fpackages%2FMicrosoft.Owin.2.1.0%2Flib%2Fnet45%2FMicrosoft.Owin.dll Namespace%3DMicrosoft.Owin Type%3DIOwinContext)]) ParameterIdentifier%3Doptions"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="4e143d45-d9cb-48f7-ae49-686aa3a2f505"
+                      LastKnownName="IdentityFactoryOptions&lt;AppRoleManager‎&gt;"
+                      LastKnownLocation="Package12_1233.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b0ebf0f8-abcb-4c53-9a4d-ecd3a13827f8"
+                  name="context"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="fc2d743d-6bd9-4955-a7d7-0a2783d0b939"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2FTennisScheduler%2Fbin%2FTennisScheduler.dll Namespace%3DTennisScheduler Type%3DAppRoleManager Member%3D(Name%3DCreate OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2Fpackages%2FMicrosoft.AspNet.Identity.Owin.2.0.0%2Flib%2Fnet45%2FMicrosoft.AspNet.Identity.Owin.dll Namespace%3DMicrosoft.AspNet.Identity.Owin Type%3D(Name%3DIdentityFactoryOptions GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2FTennisScheduler%2Fbin%2FTennisScheduler.dll Namespace%3DTennisScheduler Type%3DAppRoleManager)]))%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2Fpackages%2FMicrosoft.Owin.2.1.0%2Flib%2Fnet45%2FMicrosoft.Owin.dll Namespace%3DMicrosoft.Owin Type%3DIOwinContext)]) ParameterIdentifier%3Dcontext"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="664152ab-c56b-4306-ae08-993479918053"
+                      LastKnownName="IOwinContext"
+                      LastKnownLocation="Package13_1233.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="f1632ac7-0121-4239-a027-b945ffe20841"
+            name="AppRoleManager"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="8fa3190f-a37c-4bc7-b844-437e650631fd"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2FTennisScheduler%2Fbin%2FTennisScheduler.dll Namespace%3DTennisScheduler Type%3DAppRoleManager Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2Fpackages%2FMicrosoft.AspNet.Identity.EntityFramework.2.0.0%2Flib%2Fnet45%2FMicrosoft.AspNet.Identity.EntityFramework.dll Namespace%3DMicrosoft.AspNet.Identity.EntityFramework Type%3D(Name%3DRoleStore GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2FTennisScheduler%2Fbin%2FTennisScheduler.dll Namespace%3DTennisScheduler.Models Type%3DAppRole)]))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="4e09db86-3978-4a9a-9d46-2f292a873ecf"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c83b45d3-e97f-47f6-9c23-5e78a25d715b">
+                    <propertyInstance
+                      Id="e02028e9-2376-4be1-812d-a568dcb84aff"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="699ca2d2-a88c-4148-8591-d57460b316c6">
+                    <propertyInstance
+                      Id="53af3aca-aff2-4f7d-bdc4-21b0d53945de"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="08e09b7b-98e2-4151-b8d8-eaa2c9e4e15a">
+                    <propertyInstance
+                      Id="5deb540a-a341-42a9-bb1d-c4a9a2064d9b"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f9d6bb68-dace-47e4-b551-b071955a5c7a">
+                    <propertyInstance
+                      Id="9459270a-6d82-418c-85e8-8b70f1b0e283"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="36d7a90a-ac48-4d5e-b6c9-b64ff49181d9">
+                    <propertyInstance
+                      Id="a7828ac1-7c0f-41a8-a913-c42d6f5ef0a9"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="619b8e8b-584d-4bb2-9850-850f948de8b6">
+                    <propertyInstance
+                      Id="c660e417-cafe-4ae6-b40c-2244c475e011"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="70f9e48b-232b-4404-83c9-25c094e874a6"
+                  name="store"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="cf28068c-82e5-46e6-8025-2c67bc6826dd"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2FTennisScheduler%2Fbin%2FTennisScheduler.dll Namespace%3DTennisScheduler Type%3DAppRoleManager Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2Fpackages%2FMicrosoft.AspNet.Identity.EntityFramework.2.0.0%2Flib%2Fnet45%2FMicrosoft.AspNet.Identity.EntityFramework.dll Namespace%3DMicrosoft.AspNet.Identity.EntityFramework Type%3D(Name%3DRoleStore GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2FTennisScheduler%2Fbin%2FTennisScheduler.dll Namespace%3DTennisScheduler.Models Type%3DAppRole)]))]) ParameterIdentifier%3Dstore"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="3f1e167e-a0eb-4707-ba2c-5f9743d3b8dc"
+                      LastKnownName="RoleStore&lt;AppRole‎&gt;"
+                      LastKnownLocation="Package14_1233.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="7f809f0d-fa57-4413-a76a-36210ba1b3ff"
+        LastKnownName="Models"
+        LastKnownLocation="Package15_1233.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="fa8ca953-e61a-4693-8184-fbd8cec72128"
+        name="ApplicationUserManager"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="ee89fcc4-f91b-4b72-86a1-cac1be2e9fac"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2FTennisScheduler%2Fbin%2FTennisScheduler.dll Namespace%3DTennisScheduler Type%3DApplicationUserManager"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="9f437a54-80cd-42af-b65d-d487b8348c85"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="885fd331-fcf0-4662-9d8d-a89a09352d6f">
+                <propertyInstance
+                  Id="a6b7af9b-23bf-42c1-b011-b0efa0d9d89a"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e660057a-b557-4170-a89a-4f3f85160a13">
+                <propertyInstance
+                  Id="515c0bc5-fe65-4950-8320-02090a5fa1bc"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5165a1c4-f0c5-46d7-aa3b-436ab56d3a55">
+                <propertyInstance
+                  Id="092f14ef-5b10-4622-bb0e-58879e86da13"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="57378902-3dbc-405d-bf32-a9d9e26e55c6">
+                <propertyInstance
+                  Id="a68dae75-1a24-46c0-985e-b7121a86dc63"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d989b6d2-7638-4d2f-8ca6-bc7beb1c7b8e">
+                <propertyInstance
+                  Id="98dacc1c-0fcf-4e5e-8520-ece3d077f9e8"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="9e556f6b-821b-4b92-8ae3-5c78490c52a3"
+            isSubstitutable="false">
+            <classMoniker
+              Id="e31266fb-3d73-4438-ab18-5f4ff4561100"
+              LastKnownName="UserManager&lt;ApplicationUser‎&gt;"
+              LastKnownLocation="Package11_1233.uml" />
+          </generalization>
+          <generalization
+            Id="4410167c-2539-4d09-bbb2-35a210ba73b5"
+            isSubstitutable="false">
+            <classMoniker
+              Id="052da0d2-0676-44c1-8a39-014a66c9fba0"
+              LastKnownName="UserManager"
+              LastKnownLocation="Package11_1233.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="082a9dba-891e-4a4e-bbe3-e764627b27f4"
+            name="Create"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="046d4755-a70d-4605-bff8-520a9af034c0"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2FTennisScheduler%2Fbin%2FTennisScheduler.dll Namespace%3DTennisScheduler Type%3DApplicationUserManager Member%3D(Name%3DCreate OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2Fpackages%2FMicrosoft.AspNet.Identity.Owin.2.0.0%2Flib%2Fnet45%2FMicrosoft.AspNet.Identity.Owin.dll Namespace%3DMicrosoft.AspNet.Identity.Owin Type%3D(Name%3DIdentityFactoryOptions GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2FTennisScheduler%2Fbin%2FTennisScheduler.dll Namespace%3DTennisScheduler Type%3DApplicationUserManager)]))%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2Fpackages%2FMicrosoft.Owin.2.1.0%2Flib%2Fnet45%2FMicrosoft.Owin.dll Namespace%3DMicrosoft.Owin Type%3DIOwinContext)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="2732de6e-6862-46d4-b833-1ab1837e5491"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="49f46f1b-8309-4c46-9190-2fbd3987c7f8">
+                    <propertyInstance
+                      Id="28827e9c-6f66-4936-8e5f-3589484952e8"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="abd191d3-1fcb-4c20-982b-36f50d90c1a9">
+                    <propertyInstance
+                      Id="5d83b01c-4044-412a-9b93-5e6a11962915"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cf049996-65fa-47fa-9963-1b52aca71b3f">
+                    <propertyInstance
+                      Id="d44b2cf5-5cd2-4163-a46b-83b6cbd837e9"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0501e4d2-854d-432e-8e68-d958c7c88882">
+                    <propertyInstance
+                      Id="744aa4ec-cb96-4c5e-95f1-acc79e1a4ee5"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="83b91e03-9862-40fa-aa07-96835a411855">
+                    <propertyInstance
+                      Id="c26ccd8a-4b89-4a90-b1bd-a6f6aa984da8"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4083e5c5-65e5-42c2-b926-8c8834852b7e">
+                    <propertyInstance
+                      Id="2aec4ee1-57f1-49cb-9de4-7872d72dc5d6"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1539c9ce-12ce-4c9e-b4ad-c90e9cc7d6cd"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="fa8ca953-e61a-4693-8184-fbd8cec72128"
+                      LastKnownName="ApplicationUserManager"
+                      LastKnownLocation="Package_1233.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c428a52b-3168-4ef4-a472-2983c13691a1"
+                  name="options"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="228a501c-d27d-42c3-a087-fa82237fd093"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2FTennisScheduler%2Fbin%2FTennisScheduler.dll Namespace%3DTennisScheduler Type%3DApplicationUserManager Member%3D(Name%3DCreate OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2Fpackages%2FMicrosoft.AspNet.Identity.Owin.2.0.0%2Flib%2Fnet45%2FMicrosoft.AspNet.Identity.Owin.dll Namespace%3DMicrosoft.AspNet.Identity.Owin Type%3D(Name%3DIdentityFactoryOptions GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2FTennisScheduler%2Fbin%2FTennisScheduler.dll Namespace%3DTennisScheduler Type%3DApplicationUserManager)]))%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2Fpackages%2FMicrosoft.Owin.2.1.0%2Flib%2Fnet45%2FMicrosoft.Owin.dll Namespace%3DMicrosoft.Owin Type%3DIOwinContext)]) ParameterIdentifier%3Doptions"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="fe5b2b38-97f9-4b63-b814-ca9ccbae1fdb"
+                      LastKnownName="IdentityFactoryOptions&lt;ApplicationUserManager‎&gt;"
+                      LastKnownLocation="Package12_1233.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="603895a9-9675-4600-a41e-e32edfc8ed59"
+                  name="context"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="b3f53ff4-dad7-49db-9415-80725c725478"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2FTennisScheduler%2Fbin%2FTennisScheduler.dll Namespace%3DTennisScheduler Type%3DApplicationUserManager Member%3D(Name%3DCreate OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2Fpackages%2FMicrosoft.AspNet.Identity.Owin.2.0.0%2Flib%2Fnet45%2FMicrosoft.AspNet.Identity.Owin.dll Namespace%3DMicrosoft.AspNet.Identity.Owin Type%3D(Name%3DIdentityFactoryOptions GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2FTennisScheduler%2Fbin%2FTennisScheduler.dll Namespace%3DTennisScheduler Type%3DApplicationUserManager)]))%2C(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2Fpackages%2FMicrosoft.Owin.2.1.0%2Flib%2Fnet45%2FMicrosoft.Owin.dll Namespace%3DMicrosoft.Owin Type%3DIOwinContext)]) ParameterIdentifier%3Dcontext"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="664152ab-c56b-4306-ae08-993479918053"
+                      LastKnownName="IOwinContext"
+                      LastKnownLocation="Package13_1233.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="44b50672-2846-4115-90ba-017eb97db8d2"
+            name="ApplicationUserManager"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="d4f0a477-0a69-4af5-be4c-14f774b10fe2"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2FTennisScheduler%2Fbin%2FTennisScheduler.dll Namespace%3DTennisScheduler Type%3DApplicationUserManager Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2Fpackages%2FMicrosoft.AspNet.Identity.Core.2.0.0%2Flib%2Fnet45%2FMicrosoft.AspNet.Identity.Core.dll Namespace%3DMicrosoft.AspNet.Identity Type%3D(Name%3DIUserStore GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2FTennisScheduler%2Fbin%2FTennisScheduler.dll Namespace%3DTennisScheduler.Models Type%3DApplicationUser)]))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="741fa6b3-ad00-41d8-bf9f-e605008d0d45"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="536be701-f538-477c-a783-4c5c12a6771c">
+                    <propertyInstance
+                      Id="44dee11b-d5ea-40a7-87a6-cd96e3c26390"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fecfc81c-b135-48da-8b72-0e2da36f2184">
+                    <propertyInstance
+                      Id="4bf81951-90ef-4608-ac61-989206d2d794"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="163a0ce6-9c92-4df3-ac87-ed96ec57bb7a">
+                    <propertyInstance
+                      Id="e6e697fb-b2f4-4374-9f31-bc4ad084238a"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="561c14d5-65a6-4021-b8c7-55c29d480cb4">
+                    <propertyInstance
+                      Id="40a1e621-6b76-461b-ba0a-b15ab198a6de"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="76d8ee34-f94e-4cc7-9a1d-4379b233db63">
+                    <propertyInstance
+                      Id="bfb63d32-edf2-41c7-a0c1-67907b192ba3"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="caf8cbc4-31ad-455f-bfe9-9877fd05414b">
+                    <propertyInstance
+                      Id="3d54e71f-190d-4e17-b0d8-98aa863a926f"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7d0f55e0-0716-4aac-b360-dea037c9a4ec"
+                  name="store"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="d27f3ad2-6006-4156-b875-1f67bbb69bff"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2FTennisScheduler%2Fbin%2FTennisScheduler.dll Namespace%3DTennisScheduler Type%3DApplicationUserManager Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2Fpackages%2FMicrosoft.AspNet.Identity.Core.2.0.0%2Flib%2Fnet45%2FMicrosoft.AspNet.Identity.Core.dll Namespace%3DMicrosoft.AspNet.Identity Type%3D(Name%3DIUserStore GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2FTennisScheduler%2Fbin%2FTennisScheduler.dll Namespace%3DTennisScheduler.Models Type%3DApplicationUser)]))]) ParameterIdentifier%3Dstore"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="c2ce7b9b-21fb-47a5-b90d-f37fc61ac470"
+                      LastKnownName="IUserStore&lt;ApplicationUser‎&gt;"
+                      LastKnownLocation="Package11_1233.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="4c8f4487-84e4-47ba-b5b9-e8080fd701df"
+        name="MvcApplication"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="636d6a0d-13e8-4a0e-ad88-893d76aa4be5"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2FTennisScheduler%2Fbin%2FTennisScheduler.dll Namespace%3DTennisScheduler Type%3DMvcApplication"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="f2935ab5-1160-4bd9-bc7e-cfb5a13b5b0f"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ea2d7f0f-2901-4e0d-8555-267c246384f4">
+                <propertyInstance
+                  Id="c0e00fee-d9a4-4072-a469-23696c4abe0f"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1ead2fff-6e24-400b-930d-79887070fb67">
+                <propertyInstance
+                  Id="7b202d29-917b-4b93-a86d-701167c76859"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3b142a1e-e66b-45e1-9c50-5c8e33e4a464">
+                <propertyInstance
+                  Id="bf34860e-dac8-4e93-a701-2986aacc8934"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="88b3fa77-6b15-4a53-b978-8ee30629f10c">
+                <propertyInstance
+                  Id="0ca209de-b402-41f4-b692-3e66972d6fc5"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="303b3678-af2d-4f33-9719-85a03e25eabb">
+                <propertyInstance
+                  Id="e7deb3c1-5a5e-4549-9430-58ddcbf9dad6"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="584ac0b8-410d-4db7-8a0e-a3bc3c6f55eb"
+            isSubstitutable="false">
+            <classMoniker
+              Id="9f909cf8-1033-4b0f-ad30-dbe910b481e5"
+              LastKnownName="HttpApplication"
+              LastKnownLocation="Package2_1233.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="e3261747-629b-4aea-90d3-52eda15a044e"
+            name="Application_Start"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="c02810d3-a312-4876-9c36-7cf415281a41"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2FTennisScheduler%2Fbin%2FTennisScheduler.dll Namespace%3DTennisScheduler Type%3DMvcApplication Member%3DApplication_Start"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="6b82de2e-6275-40b4-9ee5-a788ea96d471"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="828d4961-8f72-42e3-892a-1d813703f7de">
+                    <propertyInstance
+                      Id="4bcaf1fa-56d6-4728-a522-713fe664c244"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3cd75afe-f17e-4ac5-8311-0b920ea15159">
+                    <propertyInstance
+                      Id="6881943e-33bd-4a08-8f14-a6ab07a11ac7"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ff412d7f-4fa3-4d0a-82ad-3cc3f2c4821c">
+                    <propertyInstance
+                      Id="b2d74506-57e3-4f6d-9f1d-6bfe667c081a"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b0f0a8dd-8c94-4123-b8f8-da83808dd753">
+                    <propertyInstance
+                      Id="1a71cff6-bcb9-4db0-a377-f2da73f7120b"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7a2494f9-da80-479e-adf8-98d5143c4550">
+                    <propertyInstance
+                      Id="9649114d-284b-4551-85b4-98c5cae6fb29"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c8706dca-da30-4374-a1d5-5a2cb25e9e13">
+                    <propertyInstance
+                      Id="cb594f41-121e-4fac-a22f-c585e538a821"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="4ff3d19d-2c3c-4541-b60f-3a5f06fcc66b"
+            name="MvcApplication"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="37409b08-4c48-44fc-a0bd-8dae46ae92aa"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2FTennisScheduler%2Fbin%2FTennisScheduler.dll Namespace%3DTennisScheduler Type%3DMvcApplication Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="80482aad-a39c-4361-84ed-2c1494f09708"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ae5f2db4-a561-4bdd-a330-302ea635585e">
+                    <propertyInstance
+                      Id="c8dfe9b7-3a4a-4c7a-98fb-ebfb7869c3a4"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7f3f677d-77f8-46c2-bb06-96786e3a26d9">
+                    <propertyInstance
+                      Id="8c166e27-bd0d-48c0-806a-3a1155f57252"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c895ad4a-155c-4d5e-8374-d5dfd3e48fa1">
+                    <propertyInstance
+                      Id="a6ead4f3-eb50-4b22-867e-ebacabc296de"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a12f83b1-afba-4cb1-834b-ca668cb24f11">
+                    <propertyInstance
+                      Id="bcf6075c-f117-48dd-9126-8a21330222ca"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2522f4ad-8477-4654-b81f-e6f1e5ece38b">
+                    <propertyInstance
+                      Id="7addffd3-c206-4208-8443-b03e78e489ff"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7dc25b25-0813-4330-bdc0-35654947eb46">
+                    <propertyInstance
+                      Id="8529be55-6f79-46dc-a843-4e216c136c89"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="2fd871ea-b03d-4516-a585-e265c34fe113"
+        LastKnownName="Classes"
+        LastKnownLocation="Package16_1233.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

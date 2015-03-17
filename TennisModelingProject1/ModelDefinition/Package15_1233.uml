@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="7f809f0d-fa57-4413-a76a-36210ba1b3ff"
+  name="Models"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="273e3c1e-0b60-4cc2-b449-f60e5d447392"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DTennisScheduler.Models"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="5a4cbf63-c204-41e6-b040-7ceb8963ab95"
+        name="AppRole"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="71488512-cfe7-4f19-85fb-0c05590b0ddd"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2FTennisScheduler%2Fbin%2FTennisScheduler.dll Namespace%3DTennisScheduler.Models Type%3DAppRole"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="62540479-8604-445b-8976-a01a253c1866"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2b4b3c7a-0069-4ee2-94c0-5fb974a9261f">
+                <propertyInstance
+                  Id="a8b19017-1a6b-4aef-b8c6-6089829beb6a"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d28071ab-5237-4778-8c47-5baa69de8b79">
+                <propertyInstance
+                  Id="db8d2031-fb0c-4000-94ec-edd8cf7dd1e2"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8fb21dcc-b25d-4e12-b69f-303ac3b494b1">
+                <propertyInstance
+                  Id="5932d5d5-1f5d-4f83-924f-6bd270d7df54"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="95d24bdd-60d0-4c23-8b03-6ea0a10cfe11">
+                <propertyInstance
+                  Id="81e1e1aa-abcf-4418-a123-2b4d8d797dfb"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d6bd048d-3f47-4d3d-a4e1-1eea70e0baec">
+                <propertyInstance
+                  Id="a7004ce8-74c3-4f31-b02c-015c20a5cb31"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="ac021aeb-1428-400b-9b80-56eea449a57f"
+        name="ApplicationUser"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="6f31c3c4-5871-4f65-bc84-9aeb2bfdc816"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2FTennisScheduler%2Fbin%2FTennisScheduler.dll Namespace%3DTennisScheduler.Models Type%3DApplicationUser"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="d3e64e79-ccc6-437b-a502-2a7138a2e163"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="53ecd6e6-1c39-4966-8224-4043ada056cb">
+                <propertyInstance
+                  Id="0b56a59e-26d6-4293-93f1-fbf449ca8dc5"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e7fb358a-3729-402c-98ac-6ea4f9c7e501">
+                <propertyInstance
+                  Id="b2b8597f-7dd9-4eff-8360-69cc58a577f6"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="db638593-fb13-43fd-a8de-bfe0f6f1a2de">
+                <propertyInstance
+                  Id="9f4ee7e9-29d9-41c2-876d-ba7f015b41f2"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="db56caeb-b26b-4e4a-a86b-cc206a3fee95">
+                <propertyInstance
+                  Id="2597f1a8-be0c-4cf8-80e4-93ee947a0fce"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="73e12d07-030b-4999-8c6b-988c9403ce02">
+                <propertyInstance
+                  Id="0be648c6-690e-49d4-909b-fcd5939d43d9"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="fe9569b7-6c7f-40f6-b683-a85dd2c92220"
+        name="ClosedTime"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="9a7f070d-6034-4076-9a29-afcba2ce1003"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2FTennisScheduler%2Fbin%2FTennisScheduler.dll Namespace%3DTennisScheduler.Models Type%3DClosedTime"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="bf165153-387c-49b1-af99-703f9aab4064"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="831484ed-b0e6-4c17-a10f-fca8bcda1e74">
+                <propertyInstance
+                  Id="495d06c3-28ac-40f3-aaff-f55a4d909683"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="dc79ff4b-eef8-4151-b003-18652088a876">
+                <propertyInstance
+                  Id="af8203b4-98f7-4de2-9052-f51929184a12"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b9717823-8efc-4f00-a3b8-813e8048363b">
+                <propertyInstance
+                  Id="f9837cae-611f-4746-84dc-4f0d96d89d5d"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ec2cbdd5-16b6-4ac4-83d5-aecba5ea1865">
+                <propertyInstance
+                  Id="33b9e651-a8d7-430d-87ae-928631215f4c"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d3755a65-22f3-4785-b678-9e9d672952d9">
+                <propertyInstance
+                  Id="6bb84e00-b2e4-4288-a7db-812a867ebe18"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="c282344d-4d8c-40c5-ba33-dcbf58701ce9"
+        name="Reservation"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="73e15a6b-06e7-4200-8e3a-9c427be90d09"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2FTennisScheduler%2Fbin%2FTennisScheduler.dll Namespace%3DTennisScheduler.Models Type%3DReservation"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="f4b59d71-09ff-43ca-8ea6-cf1e2fc127ef"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4cfe9d3d-b522-47d3-8967-0db3a4eff4a1">
+                <propertyInstance
+                  Id="0e653001-1de4-492d-aa14-4af20be281a1"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="db5d0d7a-1751-4d4c-a08d-639c61bf9711">
+                <propertyInstance
+                  Id="c68119e4-8926-4c24-9752-eb0351a5de48"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9f9862f7-5199-4895-b734-949b94894cd1">
+                <propertyInstance
+                  Id="8b7670ea-69c4-430d-8131-775f4327a720"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="fcd6adb1-d976-4503-97ba-dc31a43045c9">
+                <propertyInstance
+                  Id="e37768d6-caf1-4e1e-9ad2-d8b073f32082"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6545ad99-17fe-45d5-97ae-daa86ba80458">
+                <propertyInstance
+                  Id="7440151e-d8f0-4a24-9004-61e668452c28"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

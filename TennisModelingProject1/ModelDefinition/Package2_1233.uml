@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="565020dd-4aee-47ee-b9dc-b71632dc6795"
+  name="Web"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="976f6277-b3d1-44e0-b7a2-c319a66768e8"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DSystem.Web"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="1b8fd572-4578-45ec-bc47-1a40f70c3bb6"
+        LastKnownName="Mvc"
+        LastKnownLocation="Package3_1233.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="8b5160cc-0243-4c38-8c03-c810e8ff69e4"
+        LastKnownName="Optimization"
+        LastKnownLocation="Package4_1233.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="65d06f39-9ae1-4b84-9515-0027791eee75"
+        LastKnownName="Routing"
+        LastKnownLocation="Package6_1233.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="9f909cf8-1033-4b0f-ad30-dbe910b481e5"
+        name="HttpApplication"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="d8ef4029-5bcb-4d46-b27b-4d08ded61888"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Web.dll&quot; Namespace%3DSystem.Web Type%3DHttpApplication"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="b7b7194a-254d-4adb-9265-f0a55def19b3"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9c00e4db-b1e9-4e51-94aa-1439eb11b3c3">
+                <propertyInstance
+                  Id="b323dbc8-0db3-4aa5-a43d-7852b530a973"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ba7d5ef7-d6f8-4399-b91e-16e29ce1e25c">
+                <propertyInstance
+                  Id="fb3f38dc-cf03-4cae-ba56-2305a9acf41a"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d3a6ff7a-0f05-440e-bc68-34323ca81f30">
+                <propertyInstance
+                  Id="64573e84-b1dd-4efd-920d-0e88f945e443"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f6830895-f3cd-40f5-9230-a463a60c07de">
+                <propertyInstance
+                  Id="2305c885-5995-4df5-83ab-12f99acd9971"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a8f6c436-bc82-4e62-a37c-cbdff92d72e9">
+                <propertyInstance
+                  Id="ffb08f2f-d28f-4cd4-996e-93de5efc4266"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="526d84a2-5f9c-42dd-8630-2c68ca675935">
+            <interfaceMoniker
+              Id="555ec9cd-d509-4b42-b50e-f908048e420b"
+              LastKnownName="IDisposable"
+              LastKnownLocation="Package1_1233.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

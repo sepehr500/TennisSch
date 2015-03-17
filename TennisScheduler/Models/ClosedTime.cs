@@ -26,24 +26,37 @@ namespace TennisScheduler.Models
         [DataType(DataType.Date)]
         public DateTime Date2 { get; set; }
 
-        public bool Covered(DateTime x)
+        public DateTime Until { get; set; }
+
+
+        [DataType(DataType.Date)]
+        public bool Covered(DateTime x )
         {
-            //If one time and the dates match
-            if (this.Repeat == Repeat.OneTime && this.Date1.Date == x.Date)
+            if (x.Date < this.Until.Date && x.Year != 0)
             {
-                return true;
+
+
+                //If one time and the dates match
+                if (this.Repeat == Repeat.OneTime && this.Date1.Date == x.Date)
+                {
+                    return true;
+                }
+                //If weekly and days of weeks match
+                if (this.Repeat == Repeat.Weekly && this.Date1.DayOfWeek == x.DayOfWeek)
+                {
+                    return true;
+                }
+                //If monthly and days of the month match
+                if (this.Repeat == Repeat.Monthly && this.Date1.Day == x.Day)
+                {
+                    return true;
+                }
+                return false;
             }
-            //If weekly and days of weeks match
-            if (this.Repeat == Repeat.Weekly && this.Date1.DayOfWeek == x.DayOfWeek)
+            else
             {
-                return true;
+                return false;
             }
-            //If monthly and days of the month match
-            if (this.Repeat == Repeat.Monthly && this.Date1.Day == x.Day)
-            {
-                return true;
-            }
-            return false;
         }
 
     }

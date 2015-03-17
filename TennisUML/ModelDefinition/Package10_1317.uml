@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="c989e9e6-5f78-4e41-b62d-a2b099ed79fb"
+  name="Mvc"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="9ff8b555-813f-4268-8295-cfbc8bef6ad6"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DSystem.Web.Mvc"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="4ef7f4ea-8472-423f-bb3f-909d2f13febd"
+        name="MvcHtmlString"
+        isAbstract="false"
+        isLeaf="true"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="c18d85c3-a565-4b72-b956-91edce161bdb"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2Fpackages%2FMicrosoft.AspNet.Mvc.5.1.2%2Flib%2Fnet45%2FSystem.Web.Mvc.dll Namespace%3DSystem.Web.Mvc Type%3DMvcHtmlString"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="3467c896-6595-4ad7-b583-3d0b0926ecc9"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="26e6bbe7-eb0a-4aad-842b-2ca9a65d6809">
+                <propertyInstance
+                  Id="724f5ab1-db6c-46e6-af54-aec739f93dcb"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d5b1b798-33ba-4620-9feb-c10dcf2e9b07">
+                <propertyInstance
+                  Id="adda886b-fc64-4766-927e-32933fb6af63"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c8e623aa-c7de-43f8-b6cf-d6de9de177fe">
+                <propertyInstance
+                  Id="1b7c19e9-b77b-409e-b627-e2aa2a5fe742"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a9a5ef29-1e5c-420e-869e-f672ca8aa49b">
+                <propertyInstance
+                  Id="f9c02bb8-2a3b-4dde-b1db-d24e2f4b8126"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="290e9a8a-38fd-493a-93aa-e9c26f026987">
+                <propertyInstance
+                  Id="b50badf8-1a6d-4c30-8079-77345a8356ec"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="0f63a2e9-86fa-4b52-aa6c-4ce6f31396fa"
+        name="HtmlHelper"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="c2d2ba40-51ae-4fa8-b88f-6f2007868270"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2Fpackages%2FMicrosoft.AspNet.Mvc.5.1.2%2Flib%2Fnet45%2FSystem.Web.Mvc.dll Namespace%3DSystem.Web.Mvc Type%3DHtmlHelper"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="db23c3e2-483a-4052-9cc2-81f715f4a1b9"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="62d585d5-fb49-47b9-8459-650d63b10614">
+                <propertyInstance
+                  Id="d39abc55-474c-40b0-bc31-ef04ae860f78"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="71849efb-9fde-4522-a2fc-f2fdbe83b417">
+                <propertyInstance
+                  Id="a07e080b-535f-466f-9fdd-f752bd8dfeab"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="eac716eb-2bb0-478b-8be5-a62ef0f0de8b">
+                <propertyInstance
+                  Id="0837b29c-3886-4528-86c3-6f64d0ead517"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5f0b3627-a762-417f-9760-a031cb04e574">
+                <propertyInstance
+                  Id="5f589a71-385b-4e93-80bf-05b393a29f36"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="20856970-a4e6-4467-a940-5cae87357994">
+                <propertyInstance
+                  Id="a9dd09d1-c90f-41b6-9791-a240b7305fe0"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

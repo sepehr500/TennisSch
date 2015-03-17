@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="cd97bd2b-abd4-46e2-8ec5-bab423bf5c2d"
+  name="EntityFramework"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="48f54fb4-1d95-414e-b779-a16d8cdf90f3"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DMicrosoft.AspNet.Identity.EntityFramework"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="230d6a2a-3bf8-4b64-8192-a8b4145b71bb"
+        name="IdentityRole"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="2a4aa918-4435-48b9-9757-89d0b4333f0f"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2Fpackages%2FMicrosoft.AspNet.Identity.EntityFramework.2.0.0%2Flib%2Fnet45%2FMicrosoft.AspNet.Identity.EntityFramework.dll Namespace%3DMicrosoft.AspNet.Identity.EntityFramework Type%3DIdentityRole"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="984e1803-ac82-4167-9b6e-8aea96008f62"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="75a3e5b7-4931-4f7e-9fb6-8cd71bff57d2">
+                <propertyInstance
+                  Id="3d302434-c57d-414e-9c70-a7a63429f3ef"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="bf4f336c-0fec-4ca5-adce-05920ec3f407">
+                <propertyInstance
+                  Id="e84829c1-6246-48dd-b111-8e0c83074fde"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e77fa11a-804e-493e-8b16-d9ed3ed7be8d">
+                <propertyInstance
+                  Id="f9559a18-e83e-48c6-8910-065f0e4890a7"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="df1e6cc9-78ac-4c21-943d-6892de6bbbe8">
+                <propertyInstance
+                  Id="10e96069-c56e-4e67-8e90-ab27f5a294bb"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9edc48c3-46d7-454e-b9ec-0a32019f4ea2">
+                <propertyInstance
+                  Id="55d77ffe-3233-4f40-a638-8599af39a084"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="877fb426-9edc-4f0c-8555-2182ddb16de1"
+        name="IdentityUser"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="7893c0d3-28ea-4217-b2bd-0d4723f3c877"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2Fpackages%2FMicrosoft.AspNet.Identity.EntityFramework.2.0.0%2Flib%2Fnet45%2FMicrosoft.AspNet.Identity.EntityFramework.dll Namespace%3DMicrosoft.AspNet.Identity.EntityFramework Type%3DIdentityUser"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="ae12ecef-5a7d-43b1-b503-d1e46a8333c4"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="fc7c543f-6cef-4dbd-af53-ef3a1f26a9eb">
+                <propertyInstance
+                  Id="fbff8205-8806-4cd1-a644-5be4cb9dfe59"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e34976d0-a242-419d-916e-d550d671ddb6">
+                <propertyInstance
+                  Id="115f83f7-15e8-47ee-9103-fef5c3317f52"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0dea20cb-8be2-4c14-a91e-25a7c685625e">
+                <propertyInstance
+                  Id="f2e2b2d7-700b-4512-863c-ed05ef7212c4"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="98846c54-f02c-401d-8956-af88c3a6acea">
+                <propertyInstance
+                  Id="45fcde29-48ed-4a3e-aae0-9479d52e3aa7"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b4f05d32-f975-4fa6-852d-8b9b5c9fef39">
+                <propertyInstance
+                  Id="d7442643-e41c-4df0-84e7-f0f32fc656ad"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="9870667e-0f6a-45e0-93b3-abb395715687"
+        name="IdentityDbContext&lt;ApplicationUser‎&gt;"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="4b50ecd4-fbfa-4cb9-8b66-f7689a7100f1"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7454fa7d-ef9a-4c61-af19-b7e272023416">
+                <propertyInstance
+                  Id="a726cca5-3dda-4336-8126-24116c72cfd8"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="fed24c62-e77d-4b46-b0a3-b1f3345ba200">
+                <propertyInstance
+                  Id="ce594a60-883c-4fc7-98bd-1fa57ad99d8e"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="413dd4f0-069d-40c6-a5b7-8cba0402c9c9">
+                <propertyInstance
+                  Id="70ad44c3-7a6e-42a4-8f52-e69c72038042"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1455ee8d-9e2d-442d-8d40-46d7420607b6">
+                <propertyInstance
+                  Id="b8ab9e19-72ef-49ed-8780-38c33cc67d24"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8cf5c999-1d64-4a43-8efb-2cbb06161c03">
+                <propertyInstance
+                  Id="9c559b3c-c0b8-4a8b-bf88-4747fbad6c72"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <signatures>
+          <templateBinding
+            Id="da26e727-1dfc-49e8-8949-1193c519b4c6">
+            <redefinableTemplateSignatureMoniker
+              Id="800b3507-8d50-4d11-8800-ec421eff5199"
+              LastKnownLocation="Package5_1317.uml" />
+            <relationshipOwnedElementsInternal>
+              <templateBindingHasTemplateParameterSubstitution>
+                <templateParameterSubstitution
+                  Id="8a373080-7187-46ef-98ad-c8cdd406a2f5">
+                  <actuals>
+                    <classMoniker
+                      Id="f4dcc8f7-5865-41f1-9c02-b60d607c0426"
+                      LastKnownName="ApplicationUser"
+                      LastKnownLocation="Package1_1317.uml" />
+                  </actuals>
+                  <formal>
+                    <classifierTemplateParameterMoniker
+                      Id="18253176-779d-4dd8-8b27-aa12969f1d87"
+                      LastKnownLocation="Package5_1317.uml" />
+                  </formal>
+                </templateParameterSubstitution>
+              </templateBindingHasTemplateParameterSubstitution>
+            </relationshipOwnedElementsInternal>
+          </templateBinding>
+        </signatures>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="310597ac-7903-4972-98fe-0746d71c4393"
+        name="IdentityDbContext"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="0b73790b-a85b-4b6c-a180-149fb1d2113a"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2Fpackages%2FMicrosoft.AspNet.Identity.EntityFramework.2.0.0%2Flib%2Fnet45%2FMicrosoft.AspNet.Identity.EntityFramework.dll Namespace%3DMicrosoft.AspNet.Identity.EntityFramework Type%3D(Name%3DIdentityDbContext GenericParameterCount%3D1)"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="df813082-a6e4-4bfa-8778-c70129f18078"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="111f2d8d-d7bd-4749-8c91-a2ca98b637a0">
+                <propertyInstance
+                  Id="0f3e2ba9-7337-4232-bf3f-baf2ba58ab20"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="73881fbe-c239-4b21-8d9f-b778c9fdd6a7">
+                <propertyInstance
+                  Id="5bf4eedb-f1d6-4af1-a3da-b82296990d14"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d8a6aa8c-937c-4ed4-aa1a-a5e0d8b9338b">
+                <propertyInstance
+                  Id="194ed567-c57a-47d8-93c9-f66d38cb84d2"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="aa13562e-1bfb-4f2e-a25a-bad3bfa14b7f">
+                <propertyInstance
+                  Id="66132e1e-3b89-44e2-a87e-de98e0c3276c"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e9e20eb9-850c-43ca-a148-215300dfa49c">
+                <propertyInstance
+                  Id="bceb9800-dbc1-4fb7-a77c-0a92dc01c5d7"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedRedefinableTemplateSignatureInternal>
+          <redefinableTemplateSignature
+            Id="800b3507-8d50-4d11-8800-ec421eff5199"
+            parameters=""
+            name="RedefinableTemplateSignature1"
+            isLeaf="false">
+            <ownedParameters>
+              <classifierTemplateParameter
+                Id="18253176-779d-4dd8-8b27-aa12969f1d87">
+                <referencesInternal>
+                  <reference
+                    Id="662a5e21-e35c-4e17-b826-f57c368a0590"
+                    handle="viewcode://./CodeSchema_GenericParameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2Fsepehr500%2FDesktop%2FWallpapers%2FTennisScheduler%2Fpackages%2FMicrosoft.AspNet.Identity.EntityFramework.2.0.0%2Flib%2Fnet45%2FMicrosoft.AspNet.Identity.EntityFramework.dll Namespace%3DMicrosoft.AspNet.Identity.EntityFramework Type%3D(Name%3DIdentityDbContext GenericParameterCount%3D1) ParameterIdentifier%3D0"
+                    tag="ViewCode" />
+                </referencesInternal>
+                <ownedParameterableElement>
+                  <class
+                    Id="75f43a59-3a39-4292-bd6b-ddd2260af706"
+                    name="TUser"
+                    isAbstract="false"
+                    isLeaf="false"
+                    isActiveClass="false" />
+                </ownedParameterableElement>
+              </classifierTemplateParameter>
+            </ownedParameters>
+          </redefinableTemplateSignature>
+        </ownedRedefinableTemplateSignatureInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>
