@@ -25,7 +25,7 @@ namespace TennisScheduler.Classes
     public class TennisCalender
     {
         public List<TimeSlot> Times;
-        public List<TimeSlot>  getMonth(int Month)
+        public List<TimeSlot> getMonth(int Month)
         {
             using (ApplicationDbContext x = new ApplicationDbContext())
             {
@@ -42,25 +42,25 @@ namespace TennisScheduler.Classes
                         if (isOpen(CurrentTime) == true && isClosed(CurrentTime) == false && isTaken(court.Number, CurrentTime) == false)
                         {
 
-                            Times.Add(new TimeSlot { CourtNum = court.Number, Time = CurrentTime, Available = true , Type = "Open"});
+                            Times.Add(new TimeSlot { CourtNum = court.Number, Time = CurrentTime, Available = true, Type = "Open" });
                         }
                         else
                         {
                             if (isClosed(CurrentTime))
                             {
-                            Times.Add(new TimeSlot { CourtNum = court.Number, Time = CurrentTime, Available = false , Type = "Closed"});
-                               
-                                
+                                Times.Add(new TimeSlot { CourtNum = court.Number, Time = CurrentTime, Available = false, Type = "Closed" });
+
+
                             }
                             else
                             {
-                            Times.Add(new TimeSlot { CourtNum = court.Number, Time = CurrentTime, Available = false , Type = "Reserved"});
+                                Times.Add(new TimeSlot { CourtNum = court.Number, Time = CurrentTime, Available = false, Type = "Reserved" });
 
                             }
 
                         }
 
-                       CurrentTime = CurrentTime.AddMinutes(30);
+                        CurrentTime = CurrentTime.AddMinutes(30);
                     }
                 }
             }
@@ -69,20 +69,20 @@ namespace TennisScheduler.Classes
 
 
         }
-        public List<TimeSlot> getDay(int Month, int Day , int Year)
+        public List<TimeSlot> getDay(int Month, int Day, int Year)
         {
             using (ApplicationDbContext x = new ApplicationDbContext())
             {
 
-                var DayOfWeek = x.OpenTimes.Where(Thing => Thing.DayOfWeek ==   new DateTime(Year, Month, Day, 0, 0, 0).DayOfWeek);
+                var DayOfWeek = x.OpenTimes.Where(Thing => Thing.DayOfWeek == new DateTime(Year, Month, Day, 0, 0, 0).DayOfWeek);
                 var OpenTime = DayOfWeek.First();
 
                 this.Times = new List<TimeSlot>();
                 foreach (var court in x.Courts)
                 {
 
-                DateTime CurrentTime = new DateTime(Year , Month, Day, OpenTime.TimeOpen.Hour, OpenTime.TimeOpen.Minute, 0);
-                
+                    DateTime CurrentTime = new DateTime(Year, Month, Day, OpenTime.TimeOpen.Hour, OpenTime.TimeOpen.Minute, 0);
+
 
                     //While we have not yet reached close time
                     while (CurrentTime.TimeOfDay <= OpenTime.CloseTime.TimeOfDay)
@@ -90,21 +90,21 @@ namespace TennisScheduler.Classes
                         if (isOpen(CurrentTime) == true && isClosed(CurrentTime) == false && isTaken(court.Number, CurrentTime) == false)
                         {
 
-                            Times.Add(new TimeSlot { CourtNum = court.Number, Time = CurrentTime, Available = true , Type = "Open"});
+                            Times.Add(new TimeSlot { CourtNum = court.Number, Time = CurrentTime, Available = true, Type = "Open" });
                         }
                         else
                         {
                             if (isClosed(CurrentTime))
                             {
                                 ClosedTime which = isClosedWhich(CurrentTime);
-                                Times.Add(new TimeSlot { CourtNum = court.Number, Time = CurrentTime, Available = false, Type = "Closed" , Id = which.Id});
+                                Times.Add(new TimeSlot { CourtNum = court.Number, Time = CurrentTime, Available = false, Type = "Closed", Id = which.Id });
 
 
                             }
                             else
                             {
-                                Reservation which = isTakenWhich(court.Number , CurrentTime);
-                                Times.Add(new TimeSlot { CourtNum = court.Number, Time = CurrentTime, Available = false, Type = "Reservation" , Id = which.Id });
+                                Reservation which = isTakenWhich(court.Number, CurrentTime);
+                                Times.Add(new TimeSlot { CourtNum = court.Number, Time = CurrentTime, Available = false, Type = "Reservation", Id = which.Id });
 
                             }
                         }
@@ -122,32 +122,32 @@ namespace TennisScheduler.Classes
         //Is it open?
         private bool isOpen(DateTime Time)
         {
-            using(ApplicationDbContext db = new ApplicationDbContext())
-	{
+            using (ApplicationDbContext db = new ApplicationDbContext())
+            {
                 var DayList = db.OpenTimes.Where(x => x.DayOfWeek == Time.DayOfWeek).ToList();
                 var Day = DayList.First();
 
-                
+
                 if (Time.TimeOfDay >= Day.TimeOpen.TimeOfDay && Time.TimeOfDay <= Day.CloseTime.TimeOfDay)
-	            {
-		                return true;
-	            }
+                {
+                    return true;
+                }
                 else
-	            {
+                {
                     return false;
-	            }
-	}
+                }
+            }
         }
         //Is it closed?
         private bool isClosed(DateTime Time)
         {
 
-            using(ApplicationDbContext db = new ApplicationDbContext())
-	{
-        if (db.ClosedTimes.Count() == 0)
-        {
-            return false;
-        }
+            using (ApplicationDbContext db = new ApplicationDbContext())
+            {
+                if (db.ClosedTimes.Count() == 0)
+                {
+                    return false;
+                }
                 var DayList = new List<ClosedTime>();
                 //var DayList = db.ClosedTimes.Where(x => x.Covered(Time) == true).ToList();
                 foreach (var item in db.ClosedTimes.ToList())
@@ -158,18 +158,18 @@ namespace TennisScheduler.Classes
                     }
                 }
                 foreach (var item in DayList)
-	{
+                {
 
-	
-                
-                if (Time.TimeOfDay >= item.Date1.TimeOfDay && Time.TimeOfDay <= item.Date2.TimeOfDay)
-	            {
-		                return true;
-	            }
-                
+
+
+                    if (Time.TimeOfDay >= item.Date1.TimeOfDay && Time.TimeOfDay <= item.Date2.TimeOfDay)
+                    {
+                        return true;
+                    }
+
                 }
                 return false;
-	}
+            }
 
         }
         //Which one is closing it?
@@ -208,26 +208,26 @@ namespace TennisScheduler.Classes
         }
 
         //Is it taken?
-        private bool isTaken(int CourtNum , DateTime Time)
+        private bool isTaken(int CourtNum, DateTime Time)
         {
 
-            using(ApplicationDbContext db = new ApplicationDbContext())
-	{
+            using (ApplicationDbContext db = new ApplicationDbContext())
+            {
                 var DayList = db.Reservations.Where(x => x.TimeIn.Day == Time.Day && x.Court.Number == CourtNum).ToList();
 
                 foreach (var item in DayList)
-	{
+                {
 
-	
-                
-                if (Time.TimeOfDay >= item.TimeIn.TimeOfDay && Time.TimeOfDay < item.TimeOut.TimeOfDay)
-	            {
-		                return true;
-	            }
-                
+
+
+                    if (Time.TimeOfDay >= item.TimeIn.TimeOfDay && Time.TimeOfDay < item.TimeOut.TimeOfDay)
+                    {
+                        return true;
+                    }
+
                 }
                 return false;
-	}
+            }
 
         }
         private Reservation isTakenWhich(int CourtNum, DateTime Time)

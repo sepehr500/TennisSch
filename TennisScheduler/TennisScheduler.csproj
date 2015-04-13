@@ -159,6 +159,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Classes\CalenderShow.cs" />
+    <Compile Include="Classes\Reports.cs" />
     <Compile Include="Classes\TennisCalender.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\ClosedTimesController.cs" />
@@ -190,6 +191,10 @@
     <Compile Include="Migrations\201503100049524_AnotherRisk.Designer.cs">
       <DependentUpon>201503100049524_AnotherRisk.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201504130143556_RepeatUntil.cs" />
+    <Compile Include="Migrations\201504130143556_RepeatUntil.Designer.cs">
+      <DependentUpon>201504130143556_RepeatUntil.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\AppRole.cs" />
@@ -212,6 +217,8 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <None Include="Properties\PublishProfiles\tenniscenter - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\tenniscenter - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\Calender\Index.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -280,6 +287,7 @@
     <Content Include="Views\RoleAdmin\Create.cshtml" />
     <Content Include="Views\RoleAdmin\Edit.cshtml" />
     <Content Include="Views\RoleAdmin\Index.cshtml" />
+    <Content Include="Views\Home\UsageReport.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -306,6 +314,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201503100049524_AnotherRisk.resx">
       <DependentUpon>201503100049524_AnotherRisk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201504130143556_RepeatUntil.resx">
+      <DependentUpon>201504130143556_RepeatUntil.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

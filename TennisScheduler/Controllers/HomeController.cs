@@ -17,6 +17,7 @@ namespace TennisScheduler.Controllers
             //var test = z.GroupBy(x => x.Time.TimeOfDay).OrderBy(x => x.Key).ToList();
             var Cal = new CalenderShow();
             var model = Cal.getFullCalender(DateTime.Now);
+            ViewBag.ReportMonth = DateTime.Now;
             //var model = Cal.getCalender(DateTime.Now.Month, DateTime.Now.Year);
             return View(model);
 
@@ -26,6 +27,7 @@ namespace TennisScheduler.Controllers
         {
             var Cal = new CalenderShow();
             var model = Cal.getFullCalender(NewMonth.AddMonths(change));
+            ViewBag.ReportMonth = NewMonth;
             return View("Index" , model);
 
         }
@@ -43,6 +45,13 @@ namespace TennisScheduler.Controllers
             ViewBag.Message = "Your contact page.";
 
             return View();
+        }
+
+        public ActionResult UsageReport(DateTime date)
+        {
+            var stupid = new Reports();
+            var Report = stupid.getMonthTotals(date); 
+            return View(Report);
         }
     }
 }

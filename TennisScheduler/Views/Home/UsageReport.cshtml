@@ -1,0 +1,23 @@
+﻿@model List<TennisScheduler.Classes.CourtCost>
+@{
+    ViewBag.Title = "UsageReport";
+}
+
+<h2>Usage Report for @Model.First().Month.Month.ToString()</h2>
+<table class="table">
+    <tr>
+        <th>Court Number</th>
+        <th>Total</th>
+        
+    </tr>
+        <tr>
+            @foreach (var item in Model)
+            {
+                
+            <td>@item.CourtNum</td>
+
+            <td>@item.Total</td>
+            }
+        </tr>
+</table>
+
